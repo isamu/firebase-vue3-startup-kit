@@ -1,0 +1,11 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /message/{messageId} {
+      allow read, create;
+      allow delete, update: if false;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
