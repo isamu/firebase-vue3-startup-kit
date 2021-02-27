@@ -3,21 +3,24 @@
     <div @click="googleSignin">
       Googleアカウントでログイン
     </div>
-
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { googleSignin } from '../utils/SocialLogin';
+import { defineComponent } from "vue";
+import { googleSignin } from "../utils/SocialLogin";
 
 export default defineComponent({
-  name: 'Account',
+  name: "Account",
   setup() {
     return {
       googleSignin: googleSignin(
-        () => {alert("OK");},
-        (err) => {alert(err.message);}
-      ),
+        () => {
+          alert("OK");
+        },
+        err => {
+          alert(err.message);
+        }
+      )
     };
   }
 });
