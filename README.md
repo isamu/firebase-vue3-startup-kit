@@ -42,6 +42,10 @@ Your app is ready to be deployed!
 
 Deploys the app to the Firebase cloud. You need to run "yarn run build" before the deployment.
 
+### `yarn run format`
+
+Run Prettier, rewrite code as code formatting.
+
 ## Firebase Hosting GitHub Action
 
 Set up the GitHub Action part of Hosting
