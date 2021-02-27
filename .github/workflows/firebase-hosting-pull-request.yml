@@ -13,6 +13,6 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIR_VUE_STARTUP_KIT }}'
-          projectId: fir-vue-startup-kit
+          projectId: '${{ secrets.FIREBASE_PROJECT }}'
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
