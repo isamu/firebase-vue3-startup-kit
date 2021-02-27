@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png" class="logo">
     <img alt="Firebase logo" src="../assets/firebase.svg" class="logo">
     
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld msg="Welcome to Your Firebase Vue3 Startup Kit"/>
   </div>
 </template>
 
