@@ -52,6 +52,8 @@ Run Prettier, rewrite code as code formatting.
 
 1. Create and download the new service account's JSON key
 2. Add that JSON key as a secret in your GitHub repository. JSON key is FIREBASE_SERVICE_ACCOUNT_FIR_VUE_STARTUP_KIT.
+3. Add firebase project id as a secret in your GitHub repository.  JSON key is FIREBASE_PROJECT.
+
 
 More detail: see, https://github.com/marketplace/actions/deploy-to-firebase-hosting
 
