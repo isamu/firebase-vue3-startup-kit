@@ -1,8 +1,7 @@
 <template>
   <div class="layout">
-    {{message}}
     <template v-if="user.user">
-      {{user.user.displayName}}
+      {{message.message}}! {{user.user.displayName}}!!
     </template>
     <router-view/>
   </div>
@@ -10,6 +9,8 @@
 
 <script lang="ts">
 import { defineComponent, reactive, onMounted } from 'vue';
+import {useStore} from "vuex";
+
 import {db, auth} from "../utils/firebase";
 import firebase from "firebase/app";
 
@@ -20,6 +21,7 @@ interface User {
 export default defineComponent({
   name: 'Layout',
   async setup() {
+    const store = useStore()
     const user = reactive<User>({user: null});
 
     onMounted(() => {
@@ -29,9 +31,11 @@ export default defineComponent({
             "authStateChanged:",
           );
           user.user = fbuser;
+          store.commit("setUser", user);
         }
       });
     });
+
     const messageDoc = await db.doc("/test/message").get()
     const message = messageDoc.data();
 
