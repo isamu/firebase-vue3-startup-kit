@@ -48,10 +48,12 @@ Run Prettier, rewrite code as code formatting.
 
 ## Firebase Hosting GitHub Action
 
-Set up the GitHub Action part of Hosting
-`firebase init hosting:github`
+### Get that service account's key and add it to your repository as a secret
 
-See: https://github.com/marketplace/actions/deploy-to-firebase-hosting
+1. Create and download the new service account's JSON key
+2. Add that JSON key as a secret in your GitHub repository. JSON key is FIREBASE_SERVICE_ACCOUNT_FIR_VUE_STARTUP_KIT.
+
+More detail: see, https://github.com/marketplace/actions/deploy-to-firebase-hosting
 
 This is the sample site I deployed.
 
