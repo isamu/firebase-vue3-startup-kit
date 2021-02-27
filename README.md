@@ -42,9 +42,13 @@ Your app is ready to be deployed!
 
 Deploys the app to the Firebase cloud. You need to run "yarn run build" before the deployment.
 
-### `Firebase Hosting GitHub Action`
+## Firebase Hosting GitHub Action
 
 Set up the GitHub Action part of Hosting
 `firebase init hosting:github`
 
 See: https://github.com/marketplace/actions/deploy-to-firebase-hosting
+
+This is the sample site I deployed.
+
+https://firebase-vue3-startup-kit.firebase.love/
