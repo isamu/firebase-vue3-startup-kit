@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <div @click="googleSignin">
-      Googleアカウントでログイン
-    </div>
+    <div @click="googleSignin">Googleアカウントでログイン</div>
   </div>
 </template>
 <script lang="ts">
