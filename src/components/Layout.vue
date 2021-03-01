@@ -25,7 +25,7 @@ export default defineComponent({
     const user = reactive<User>({ user: null });
 
     onMounted(() => {
-      auth.onAuthStateChanged(fbuser => {
+      auth.onAuthStateChanged((fbuser) => {
         if (fbuser) {
           console.log("authStateChanged:");
           user.user = fbuser;
@@ -39,8 +39,8 @@ export default defineComponent({
 
     return {
       message,
-      user
+      user,
     };
-  }
+  },
 });
 </script>

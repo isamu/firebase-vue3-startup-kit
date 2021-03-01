@@ -28,9 +28,11 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-typescript": "^5.0.2",
     "autoprefixer": "^9",
-    "eslint": "^6.7.2",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0-0",
     "postcss": "^7",
+    "prettier": "^2.2.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "~3.9.3"
   }
