@@ -7,5 +7,5 @@ export const firebaseConfig = {
   messagingSenderId: "225404938985",
   appId: "1:225404938985:web:a2cea9fab1722fce",
   messageKey:
-    "BGwIKr3yZdXmg4Pl-BpIQX_ETtHYl0RqvAJFoc-hYKFyaoU3wZXarqto5DSq1cemFuARMjFvJ02B83T5ga42MKo"
+    "BGwIKr3yZdXmg4Pl-BpIQX_ETtHYl0RqvAJFoc-hYKFyaoU3wZXarqto5DSq1cemFuARMjFvJ02B83T5ga42MKo",
 };
