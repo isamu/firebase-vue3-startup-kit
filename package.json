@@ -11,7 +11,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "firebase": "^8.2.9",
-    "vue": "^3.0.0",
+    "vue": "^3.2.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
@@ -28,12 +28,12 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-typescript": "^5.0.2",
     "autoprefixer": "^9",
-    "eslint": "^7.21.0",
-    "eslint-config-prettier": "^8.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^7.0.0-0",
     "postcss": "^7",
-    "prettier": "^2.2.1",
+    "prettier": "^2.4.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "typescript": "~3.9.3"
+    "typescript": "~4.4.3"
   }
 }
