@@ -1,16 +1,21 @@
 import { createStore } from "vuex";
+import firebase from "firebase/app";
 
-export default createStore({
+interface State {
+  user: firebase.User | null | undefined;
+}
+
+export default createStore<State>({
   state: {
     user: undefined,
   },
   mutations: {
-    setUser(state, user) {
+    setUser(state: State, user: firebase.User | null) {
       state.user = user;
     },
   },
   getters: {
-    isSiginedIn: (state) => {
+    isSiginedIn: (state: State) => {
       return state.user !== null && state.user !== undefined;
     },
   },

@@ -29,7 +29,9 @@ export default defineComponent({
         if (fbuser) {
           console.log("authStateChanged:");
           user.user = fbuser;
-          store.commit("setUser", user);
+          store.commit("setUser", fbuser);
+        } else {
+          store.commit("setUser", null);
         }
       });
     });
