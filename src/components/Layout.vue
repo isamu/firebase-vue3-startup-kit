@@ -11,18 +11,19 @@
 import { defineComponent, reactive, onMounted } from "vue";
 import { useStore } from "vuex";
 
-import { db, auth } from "../utils/firebase";
-import firebase from "firebase/app";
+import { db, auth } from "@/utils/firebase";
+import { doc, getDoc } from "firebase/firestore";
+import { User } from "firebase/auth";
 
-interface User {
-  user: firebase.User | null;
+interface UserData {
+  user: User | null;
 }
 
 export default defineComponent({
-  name: "Layout",
+  name: "AppLayout",
   async setup() {
     const store = useStore();
-    const user = reactive<User>({ user: null });
+    const user = reactive<UserData>({ user: null });
 
     onMounted(() => {
       auth.onAuthStateChanged((fbuser) => {
@@ -36,7 +37,7 @@ export default defineComponent({
       });
     });
 
-    const messageDoc = await db.doc("/test/message").get();
+    const messageDoc = await getDoc(doc(db, "/test/message"));
     const message = messageDoc.data();
 
     return {

@@ -1,8 +1,8 @@
 import { createStore } from "vuex";
-import firebase from "firebase/app";
+import { User } from "firebase/auth";
 
 interface State {
-  user: firebase.User | null | undefined;
+  user: User | null | undefined;
 }
 
 export default createStore<State>({
@@ -10,7 +10,7 @@ export default createStore<State>({
     user: undefined,
   },
   mutations: {
-    setUser(state: State, user: firebase.User | null) {
+    setUser(state: State, user: User | null) {
       state.user = user;
     },
   },

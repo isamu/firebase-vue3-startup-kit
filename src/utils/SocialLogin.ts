@@ -1,13 +1,13 @@
-import firebase from "firebase/app";
-import { authObject, auth } from "@/utils/firebase";
+import { auth } from "@/utils/firebase";
+import { signInWithPopup, GoogleAuthProvider, FacebookAuthProvider, AuthProvider, AuthError } from "firebase/auth";
 
 const authSignIn = async (
-  provider: firebase.auth.AuthProvider,
+  provider: AuthProvider,
   callback?: () => void | null,
-  errorCallback?: (error: firebase.auth.Error) => void | null
+  errorCallback?: (error: AuthError) => void | null
 ) => {
   try {
-    await auth.signInWithPopup(provider);
+    await signInWithPopup(auth, provider);
     if (callback) {
       callback();
     }
@@ -20,10 +20,10 @@ const authSignIn = async (
 
 export const googleSignin = (
   callback?: () => void | null,
-  errorCallback?: (error: firebase.auth.Error) => void | null
+  errorCallback?: (error: AuthError) => void | null
 ) => {
   return () => {
-    const provider = new authObject.GoogleAuthProvider();
+    const provider = new GoogleAuthProvider();
     provider.addScope("email");
     authSignIn(provider, callback, errorCallback);
   };
@@ -31,10 +31,10 @@ export const googleSignin = (
 
 export const facebookSignin = (
   callback?: () => void | null,
-  errorCallback?: (error: firebase.auth.Error) => void | null
+  errorCallback?: (error: AuthError) => void | null
 ) => {
   return () => {
-    const provider = new authObject.FacebookAuthProvider();
+    const provider = new FacebookAuthProvider();
     provider.addScope("email,user_birthday");
     authSignIn(provider, callback, errorCallback);
   };

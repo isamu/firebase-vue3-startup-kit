@@ -13,7 +13,7 @@ import { defineComponent } from "vue";
 import { googleSignin } from "../utils/SocialLogin";
 
 export default defineComponent({
-  name: "Account",
+  name: "AccountPage",
   setup() {
     return {
       googleSignin: googleSignin(
