@@ -2,7 +2,11 @@
 
 ## Purpose
 
-This is a Start-Up kit for a Firebase web project, which uses Vue3.
+This is a Start-Up kit for a Firebase web project, which uses Vue3 and firebase 9.
+
+## Requirements 
+
+- Node.js version 14 or later.
 
 ## Instruction
 
