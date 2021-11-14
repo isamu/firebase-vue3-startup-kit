@@ -1,5 +1,11 @@
 import { auth } from "@/utils/firebase";
-import { signInWithPopup, GoogleAuthProvider, FacebookAuthProvider, AuthProvider, AuthError } from "firebase/auth";
+import {
+  signInWithPopup,
+  GoogleAuthProvider,
+  FacebookAuthProvider,
+  AuthProvider,
+  AuthError,
+} from "firebase/auth";
 
 const authSignIn = async (
   provider: AuthProvider,

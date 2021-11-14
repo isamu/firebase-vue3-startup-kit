@@ -9,8 +9,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "AboutPage",
   setup() {
-    return {
-    }
-  }
+    return {};
+  },
 });
 </script>
