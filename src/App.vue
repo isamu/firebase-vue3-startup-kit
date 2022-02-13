@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <template v-if="isSiginedIn">
+    <template v-if="isSignedIn">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </template>
@@ -23,11 +23,11 @@ export default {
   setup() {
     const store = useStore();
     const user = computed(() => store.state.user);
-    const isSiginedIn = computed(() => store.getters.isSiginedIn);
+    const isSignedIn = computed(() => store.getters.isSignedIn);
 
     return {
       user,
-      isSiginedIn,
+      isSignedIn,
     };
   },
 };

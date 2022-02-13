@@ -15,7 +15,7 @@ export default createStore<State>({
     },
   },
   getters: {
-    isSiginedIn: (state: State) => {
+    isSignedIn: (state: State) => {
       return state.user !== null && state.user !== undefined;
     },
   },
