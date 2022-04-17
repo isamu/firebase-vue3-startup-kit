@@ -1,6 +1,7 @@
 {
   "name": "firebase-vue3-startup-kit",
   "version": "0.1.1",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
