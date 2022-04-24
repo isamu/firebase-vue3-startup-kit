@@ -1,6 +1,6 @@
 {
   "name": "firebase-vue3-startup-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,9 +9,11 @@
     "format": "prettier --write 'src/**/*.{js,ts,vue}'"
   },
   "dependencies": {
+    "@vueuse/head": "^0.7.6",
     "core-js": "^3.21.0",
     "firebase": "^9.6.11",
     "vue": "^3.2.33",
+    "vue-i18n": "9",
     "vue-router": "^4.0.14",
     "vuex": "^4.0.2"
   },

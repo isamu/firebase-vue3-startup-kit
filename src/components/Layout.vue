@@ -1,9 +1,8 @@
 <template>
   <div class="layout">
-    <template v-if="user.user">
-      {{ message.message }}! {{ user.user.displayName }}!!
-    </template>
+    <template v-if="user.user"> {{ user.user.displayName }}!! </template>
     <router-view />
+    <Languages class="mt-4" />
   </div>
 </template>
 
@@ -11,9 +10,12 @@
 import { defineComponent, reactive, onMounted } from "vue";
 import { useStore } from "vuex";
 
-import { db, auth } from "@/utils/firebase";
-import { doc, getDoc } from "firebase/firestore";
+import { auth } from "@/utils/firebase";
 import { User } from "firebase/auth";
+
+import { useI18nParam } from "@/i18n/utils";
+
+import Languages from "@/components/Languages.vue";
 
 interface UserData {
   user: User | null;
@@ -21,9 +23,13 @@ interface UserData {
 
 export default defineComponent({
   name: "AppLayout",
+  components: {
+    Languages,
+  },
   async setup() {
     const store = useStore();
     const user = reactive<UserData>({ user: null });
+    useI18nParam();
 
     onMounted(() => {
       auth.onAuthStateChanged((fbuser) => {
@@ -37,11 +43,7 @@ export default defineComponent({
       });
     });
 
-    const messageDoc = await getDoc(doc(db, "/test/message"));
-    const message = messageDoc.data();
-
     return {
-      message,
       user,
     };
   },

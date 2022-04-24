@@ -1,13 +1,13 @@
 <template>
   <div id="nav">
     <template v-if="isSignedIn">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link :to="localizedUrl('/')">Home</router-link> |
+      <router-link :to="localizedUrl('/about')">About</router-link>
     </template>
     <template v-else>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/account">Signin</router-link>
+      <router-link :to="localizedUrl('/')">Home</router-link> |
+      <router-link :to="localizedUrl('/about')">About</router-link> |
+      <router-link :to="localizedUrl('/account')">Signin</router-link>
     </template>
   </div>
   <Suspense>
@@ -15,22 +15,21 @@
   </Suspense>
 </template>
 
-<script>
-import { computed } from "vue";
-import { useStore } from "vuex";
+<script lang="ts">
+import { defineComponent, computed } from "vue";
+import { useUser, useIsSignedIn } from "@/utils/utils";
 
-export default {
+export default defineComponent({
   setup() {
-    const store = useStore();
-    const user = computed(() => store.state.user);
-    const isSignedIn = computed(() => store.getters.isSignedIn);
+    const user = useUser();
+    const isSignedIn = useIsSignedIn();
 
     return {
       user,
       isSignedIn,
     };
   },
-};
+});
 </script>
 
 <style>

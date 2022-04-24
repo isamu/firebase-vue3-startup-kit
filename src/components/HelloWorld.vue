@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1 class="text-4xl font-bold my-6">{{ msg }}</h1>
+    <h1 class="text-4xl font-bold my-6">{{ $t("message.hello") }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the

@@ -8,8 +8,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript",
-    "google",
+    "plugin:import/typescript"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
