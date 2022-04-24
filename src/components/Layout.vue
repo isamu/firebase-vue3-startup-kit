@@ -37,11 +37,11 @@ export default defineComponent({
       });
     });
 
-    const messageDoc = await getDoc(doc(db, "/test/message"));
-    const message = messageDoc.data();
+    // const messageDoc = await getDoc(doc(db, "/test/message"));
+    // const message = messageDoc.data();
 
     return {
-      message,
+      // message,
       user,
     };
   },
