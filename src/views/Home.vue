@@ -22,10 +22,7 @@
         />
       </svg>
     </div>
-
-    <HelloWorld
-      msg="Welcome to Your Firebase + Vue3 + Tailwind CSS Startup Kit"
-    />
+    <HelloWorld/>
   </div>
 </template>
 
