@@ -2,10 +2,10 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Layout from "../components/Layout.vue";
 import Blank from "../components/Blank.vue";
 import NotFound from "../components/NotFound.vue";
+
 import Home from "../views/Home.vue";
 import Account from "../views/Account.vue";
 import About from "../views/About.vue";
-
 
 const routeChildren: Array<RouteRecordRaw> = [
   {
@@ -37,7 +37,7 @@ const routes: Array<RouteRecordRaw> = [
         component: Blank,
         children: routeChildren,
       },
-    ]
+    ],
   },
   {
     path: "/:page(.*)",
@@ -45,7 +45,7 @@ const routes: Array<RouteRecordRaw> = [
     component: NotFound,
   },
 ];
-console.log(routes);
+
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,

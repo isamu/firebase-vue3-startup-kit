@@ -22,7 +22,7 @@
         />
       </svg>
     </div>
-    <HelloWorld/>
+    <HelloWorld />
   </div>
 </template>
 

@@ -1,18 +1,13 @@
+import en from "./en";
+import ja from "./ja";
+
 const messages = {
-  en: {
-    message: {
-      hello: 'hello world'
-    }
-  },
-  ja: {
-    message: {
-      hello: 'こんにちは、世界'
-    }
-  }
+  en,
+  ja,
 };
 
 const config = {
-  locale: "ja",
+  locale: "en",
   messages,
 };
 

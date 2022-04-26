@@ -1,8 +1,6 @@
 <template>
   <div class="layout">
-    <template v-if="user.user">
-      {{ user.user.displayName }}!!
-    </template>
+    <template v-if="user.user"> {{ user.user.displayName }}!! </template>
     <router-view />
   </div>
 </template>
@@ -28,7 +26,7 @@ export default defineComponent({
     const i18n = useI18n();
 
     const lang = computed(() => {
-      return route.params.lang as string || "en";
+      return (route.params.lang as string) || "en";
     });
     watch(lang, () => {
       i18n.locale.value = lang.value;
