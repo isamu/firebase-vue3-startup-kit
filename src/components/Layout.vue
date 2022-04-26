@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <template v-if="user.user">
-      {{ message.message }}! {{ user.user.displayName }}!!
+      {{ user.user.displayName }}!!
     </template>
     <router-view />
   </div>
@@ -37,11 +37,7 @@ export default defineComponent({
       });
     });
 
-    // const messageDoc = await getDoc(doc(db, "/test/message"));
-    // const message = messageDoc.data();
-
     return {
-      // message,
       user,
     };
   },
