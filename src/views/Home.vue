@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <div class="flex justify-center items-center space-x-8">
-      <!-- <img alt="Firebase logo" src="../assets/firebase.svg" class="logo" /> -->
       <!-- Use Tailwind CSS h-40 (=10rem=160px) instead of .logo. -->
       <img
         alt="Firebase logo"
@@ -9,7 +8,6 @@
         class="h-40 object-contain"
       />
 
-      <!-- <img alt="Vue logo" src="../assets/logo.png" class="logo" /> -->
       <!-- Use Tailwind CSS h-40 (=10rem=160px) instead of .logo. -->
       <img alt="Vue logo" src="../assets/logo.png" class="h-40" />
 
@@ -37,9 +35,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style>
-/* .logo {
-  height: 150px;
-} */
-</style>

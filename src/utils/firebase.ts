@@ -6,8 +6,9 @@ import { getFirestore } from "firebase/firestore";
 
 import { firebaseConfig } from "../config/project";
 
-initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(firebaseConfig);
 
 export const db = getFirestore();
 export const auth = getAuth();
-export const functions = getFunctions();
+export const functions = getFunctions(firebaseApp, "asia-northeast1");
+//export const functions = getFunctions(firebaseApp);
