@@ -8,8 +8,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, onMounted } from "vue";
+import { defineComponent, reactive, onMounted, computed, watch } from "vue";
 import { useStore } from "vuex";
+import { useRoute } from "vue-router";
+import { useI18n } from "vue-i18n";
 
 import { db, auth } from "@/utils/firebase";
 import { doc, getDoc } from "firebase/firestore";
@@ -22,6 +24,17 @@ interface UserData {
 export default defineComponent({
   name: "AppLayout",
   async setup() {
+    const route = useRoute();
+    const i18n = useI18n();
+
+    const lang = computed(() => {
+      return route.params.lang as string || "en";
+    });
+    watch(lang, () => {
+      i18n.locale.value = lang.value;
+    });
+    i18n.locale.value = lang.value;
+
     const store = useStore();
     const user = reactive<UserData>({ user: null });
 
