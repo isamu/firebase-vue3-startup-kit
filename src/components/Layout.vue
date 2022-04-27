@@ -2,6 +2,7 @@
   <div class="layout">
     <template v-if="user.user"> {{ user.user.displayName }}!! </template>
     <router-view />
+    <Languages />
   </div>
 </template>
 
@@ -15,12 +16,17 @@ import { db, auth } from "@/utils/firebase";
 import { doc, getDoc } from "firebase/firestore";
 import { User } from "firebase/auth";
 
+import Languages from "@/components/Languages.vue";
+
 interface UserData {
   user: User | null;
 }
 
 export default defineComponent({
   name: "AppLayout",
+  components: {
+    Languages,
+  },
   async setup() {
     const route = useRoute();
     const i18n = useI18n();

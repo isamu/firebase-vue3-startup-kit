@@ -11,4 +11,6 @@ const config = {
   messages,
 };
 
+export const languages = Object.keys(messages);
+
 export default config;
