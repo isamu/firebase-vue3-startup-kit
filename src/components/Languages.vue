@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4">
+  <div>
     <select @change="updateValue">
       <option
         v-for="(option, index) in languages"
@@ -25,7 +25,6 @@ export default defineComponent({
     const route = useRoute();
     const router = useRouter();
     const i18n = useI18n();
-    console.log(i18n.locale.value);
 
     const selectedValue = ref(i18n.locale.value);
 

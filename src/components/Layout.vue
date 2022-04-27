@@ -2,19 +2,18 @@
   <div class="layout">
     <template v-if="user.user"> {{ user.user.displayName }}!! </template>
     <router-view />
-    <Languages />
+    <Languages class="mt-4" />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, onMounted, computed, watch } from "vue";
+import { defineComponent, reactive, onMounted } from "vue";
 import { useStore } from "vuex";
-import { useRoute } from "vue-router";
-import { useI18n } from "vue-i18n";
 
-import { db, auth } from "@/utils/firebase";
-import { doc, getDoc } from "firebase/firestore";
+import { auth } from "@/utils/firebase";
 import { User } from "firebase/auth";
+
+import { useI18nParam } from "@/i18n/utils";
 
 import Languages from "@/components/Languages.vue";
 
@@ -28,19 +27,9 @@ export default defineComponent({
     Languages,
   },
   async setup() {
-    const route = useRoute();
-    const i18n = useI18n();
-
-    const lang = computed(() => {
-      return (route.params.lang as string) || "en";
-    });
-    watch(lang, () => {
-      i18n.locale.value = lang.value;
-    });
-    i18n.locale.value = lang.value;
-
     const store = useStore();
     const user = reactive<UserData>({ user: null });
+    useI18nParam();
 
     onMounted(() => {
       auth.onAuthStateChanged((fbuser) => {

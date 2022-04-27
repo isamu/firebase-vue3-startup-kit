@@ -17,13 +17,12 @@
 
 <script lang="ts">
 import { defineComponent, computed } from "vue";
-import { useStore } from "vuex";
+import { useUser, useIsSignedIn } from "@/utils/utils";
 
 export default defineComponent({
   setup() {
-    const store = useStore();
-    const user = computed(() => store.state.user);
-    const isSignedIn = computed(() => store.getters.isSignedIn);
+    const user = useUser();
+    const isSignedIn = useIsSignedIn();
 
     return {
       user,
