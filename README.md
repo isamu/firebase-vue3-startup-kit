@@ -36,12 +36,16 @@ Functions called by the client are written in `src/index.ts` like `exportIfNeede
 In this case, the client calls test as a function. And when the client call the test Function, the default function in `functions/src/wrappers/tests/test.ts` is called. See this file for more information.
 
 ###  Vue.js side.
- - The functions settings are in `src/utils/firebase.ts`. By default, it set to call asia-northeast1 (tokyo) region.
+ - The functions settings are in `src/utils/firebase.ts`. By default, it set to call asia-northeast1 (Tokyo) region.
  - All functions put together in `src/utils/functions.ts`. You should add new functions in this file.
+
+### Region
+ 
+The region of Functions is set in asia-northeast1(Tokyo). If you change the region, be sure to change both Vue.js in Functions.
 
 ## i18n
  - This startup-kit supports i18n using url path.
- - You can use one vue file in both `/en/index` and `/jp/index` .
+ - You can use one Vue file in both `/en/index` and `/jp/index` .
  - Language files are in `src/i18n/` directory.
     - `en.ts` and `ja.ts` are Language files.
     - The language file used for the language switching pull-down (select) is `language.ts`. The same file is read from `en.ts` and `ja.ts`. Write in each language.
