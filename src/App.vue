@@ -39,7 +39,7 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50; */
-  @apply font-sans antialiased text-center text-gray-700;
+  @apply text-center font-sans text-gray-700 antialiased;
 }
 
 #nav {

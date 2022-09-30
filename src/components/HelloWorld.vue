@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1 class="text-4xl font-bold my-6">{{ $t("message.hello") }}</h1>
+    <h1 class="my-6 text-4xl font-bold">{{ $t("message.hello") }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -136,7 +136,7 @@ ul {
 li {
   /* display: inline-block;
   margin: 0 10px; */
-  @apply inline-block mx-3;
+  @apply mx-3 inline-block;
 }
 
 a {

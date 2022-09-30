@@ -28,7 +28,7 @@ export default defineComponent({
 
     const selectedValue = ref(i18n.locale.value);
 
-    const updateValue = (value: {target: HTMLSelectElement}) => {
+    const updateValue = (value: { target: HTMLSelectElement }) => {
       const basePath = (() => {
         if (route.params.lang) {
           return route.path.slice(route.params.lang.length + 1);
