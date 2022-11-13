@@ -1,36 +1,8 @@
 <template>
-  <div id="nav">
-    <template v-if="isSignedIn">
-      <router-link :to="localizedUrl('/')">Home</router-link> |
-      <router-link :to="localizedUrl('/about')">About</router-link>
-    </template>
-    <template v-else>
-      <router-link :to="localizedUrl('/')">Home</router-link> |
-      <router-link :to="localizedUrl('/about')">About</router-link> |
-      <router-link :to="localizedUrl('/account')">Signin</router-link>
-    </template>
-  </div>
   <Suspense>
     <router-view />
   </Suspense>
 </template>
-
-<script lang="ts">
-import { defineComponent, computed } from "vue";
-import { useUser, useIsSignedIn } from "@/utils/utils";
-
-export default defineComponent({
-  setup() {
-    const user = useUser();
-    const isSignedIn = useIsSignedIn();
-
-    return {
-      user,
-      isSignedIn,
-    };
-  },
-});
-</script>
 
 <style>
 #app {
