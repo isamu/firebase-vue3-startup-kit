@@ -6,9 +6,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { useHead } from "@vueuse/head";
+
 export default defineComponent({
   name: "AboutPage",
   setup() {
+    useHead({
+      title: 'About page'
+    });
     return {};
   },
 });
