@@ -16,6 +16,17 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "headers": [{
+        "source": "**",
+        "headers": [
+          { "key" : "Content-Security-Policy", "value": "frame-ancestors 'none'"},
+          { "key" : "X-Frame-Options", "value" : "deny" },
+          { "key" : "X-Content-Type-Options", "value" : "nosniff" },
+          { "key" : "X-XSS-Protection", "value" : "1; mode=block" },
+          { "key" : "X-Permitted-Cross-Domain-Policies", "value" : "none" },
+          { "key" : "Referrer-Policy", "value": "no-referrer" }
+        ]
+    }],    
     "rewrites": [
       {
         "source": "**",
