@@ -5,6 +5,8 @@
      - watchは、バグの原因になるので実装には注意を。(watchを定義したときには実行されない/watchされる変数が事前にセットされる場合は呼ばれない）
      - watchEffectは定義時に実行される。しかし、後で実装に変更が入った場合に副作用が増える可能性もある。（追加した変数がwatch対象になり想定してないケースで更新されるなど）
      - computedのほうがわかりやすい
+   - SFC(single file component)は使わない
+     - templateで使う変数とそうでないものが区別がつかなくなる 
  - JavaScript
    - varは禁止。letも極力やめて、constを使うようにする(immutable)
    - for(let ...) もfor ofやforEach, map, reduceを使えないか検討する
