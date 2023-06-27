@@ -2,9 +2,9 @@
  - Vue.js
    - Composition APIを使う(Not Option API)
    - watch / watchEffect / computed
-    - watchは、バグの原因になるので実装には注意を。(watchを定義したときには実行されない/watchされる変数が事前にセットされる場合は呼ばれない）
-    - watchEffectは定義時に実行される。しかし、後で実装に変更が入った場合に副作用が増える可能性もある。（追加した変数がwatch対象になり想定してないケースで更新されるなど）
-    - computedのほうがわかりやすい
+     - watchは、バグの原因になるので実装には注意を。(watchを定義したときには実行されない/watchされる変数が事前にセットされる場合は呼ばれない）
+     - watchEffectは定義時に実行される。しかし、後で実装に変更が入った場合に副作用が増える可能性もある。（追加した変数がwatch対象になり想定してないケースで更新されるなど）
+     - computedのほうがわかりやすい
  - JavaScript
    - varは禁止。letも極力constを使うようにしてletは使わない(immutable)
    - for(let ...) もfor ofやforEach, map, reduceを使えないか検討する
@@ -14,9 +14,9 @@
      - 特別な場合を除き then, promiseではなくasync/await を使う
    - hash値は使えるときは省略記法を使う
    - 数値を直接ソースに書かない。定数（変数として定義する)
-　　   - const sleepTimeSecond = 10; await sleep(sleepTimeSecond);
+　　    - const sleepTimeSecond = 10; await sleep(sleepTimeSecond);
    - 変数名は、極力誰が読んでも意味がわかるように付ける
-     - x, ではなくmodalBoxPositionX など
+      - x, ではなくmodalBoxPositionX など
    - ifやforを深くnestさせない
    -  DRY(Don't repeat yourself)
    - 変更に強い実装を。 arrayは数が増えても動くか、順番が変わっても問題なく動作するか。
@@ -33,5 +33,7 @@
    - templateには直接文言を書かないでi18nのhepler関数を使う {{ $t() }}
    - 通貨などもi18nをかならず使う{{$n() }}
    - router-linkのリンク先もi18n対応が必要(localizedUrl)
+   - 日本語だけのサイトでも、i18nで文言をわけておくと、文言部分だけの変更を他の人に依頼しやすくなる
+   - 利用規約など、全体が言語ごとに切り替わる場合は、hepler関数ではなくv-ifで切り替える、もしくは言語ごとにcomponentで切り替える（v-if）とよい。
  
  
