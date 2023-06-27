@@ -1,0 +1,17 @@
+# Vue.js/JavaScript全般
+ - Vue.js
+   - Composition APIを使う(Not Option API)
+ - JavaScript
+   - varは禁止。letも極力constを使うようにしてletは使わない(immutable)
+   - for(let ...) もfor ofやforEach, map, reduceを使えないか検討する
+     - Array操作はfind, some, every, includesなどを使う
+   - 型は必ずつける
+   - Promise
+     - 特別な場合を除き then, promiseではなくasync/await を使う
+   - hash値は使えるときは省略記法を使う
+   - 数値を直接ソースに書かない。定数（変数として定義する)
+　　   - const sleepTimeSecond = 10; await sleep(sleepTimeSecond);
+   - 変数名は、極力誰が読んでも意味がわかるように付ける
+     - x, ではなくmodalBoxPositionX など
+   - ifやforを深くnestさせない
+   -  DRY(Don't repeat yourself)
