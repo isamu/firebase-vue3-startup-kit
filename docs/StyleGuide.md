@@ -9,7 +9,7 @@
    - varは禁止。letも極力constを使うようにしてletは使わない(immutable)
    - for(let ...) もfor ofやforEach, map, reduceを使えないか検討する
      - Array操作はfind, some, every, includesなどを使う
-   - 型は必ずつける
+   - 型は必ずつける。any/unknownは使わない。
    - Promise
      - 特別な場合を除き then, promiseではなくasync/await を使う
    - hash値は使えるときは省略記法を使う
