@@ -1,6 +1,6 @@
 # Vue.js/JavaScript全般
  - Vue.js
-   - Composition APIを使う(Not Option API)
+   - Composition APIを使う(Not Options API)
    - watch / watchEffect / computed
      - watchは、バグの原因になるので実装には注意を。(watchを定義したときには実行されない/watchされる変数が事前にセットされる場合は呼ばれない）
      - watchEffectは定義時に実行される。しかし、後で実装に変更が入った場合に副作用が増える可能性もある。（追加した変数がwatch対象になり想定してないケースで更新されるなど）
