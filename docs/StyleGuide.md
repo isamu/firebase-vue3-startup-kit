@@ -14,7 +14,7 @@
      - 特別な場合を除き then, promiseではなくasync/await を使う
    - hash値は使えるときは省略記法を使う
    - 数値を直接ソースに書かない。定数（変数として定義する)
-　　    - const sleepTimeSecond = 10; await sleep(sleepTimeSecond);
+     - const sleepTimeSecond = 10; await sleep(sleepTimeSecond);
    - 変数名は、極力誰が読んでも意味がわかるように付ける
       - x, ではなくmodalBoxPositionX など
    - ifやforを深くnestさせない
@@ -38,7 +38,7 @@
  
  # style
    - tailwind cssを使う
-   - styleタグには記述しない
+   - どうしても必要なとき以外は、styleタグには記述しない
      
 # format
   - commit前に yarn run formatを行う
