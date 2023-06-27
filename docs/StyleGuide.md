@@ -12,6 +12,7 @@
    - importはalias pathを使う（ファイルを移動したときに、相対パスだと壊れる）
    - propsにFunctionsを定義しない
      - emitを使う
+   - reactiveよりrefを推奨
 
  - JavaScript
    - varは禁止。letも極力やめて、constを使うようにする(immutable)
