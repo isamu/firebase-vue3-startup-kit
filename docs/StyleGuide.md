@@ -6,7 +6,7 @@
      - watchEffectは定義時に実行される。しかし、後で実装に変更が入った場合に副作用が増える可能性もある。（追加した変数がwatch対象になり想定してないケースで更新されるなど）
      - computedのほうがわかりやすい
  - JavaScript
-   - varは禁止。letも極力constを使うようにしてletは使わない(immutable)
+   - varは禁止。letも極力やめて、constを使うようにする(immutable)
    - for(let ...) もfor ofやforEach, map, reduceを使えないか検討する
      - Array操作はfind, some, every, includesなどを使う
    - 型は必ずつける。any/unknownは使わない。
