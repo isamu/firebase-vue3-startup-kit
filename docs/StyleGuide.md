@@ -36,4 +36,10 @@
    - 日本語だけのサイトでも、i18nで文言をわけておくと、文言部分だけの変更を他の人に依頼しやすくなる
    - 利用規約など、全体が言語ごとに切り替わる場合は、hepler関数ではなくv-ifで切り替える、もしくは言語ごとにcomponentで切り替える（v-if）とよい。
  
- 
+ # style
+   - tailwind cssを使う
+   - styleタグには記述しない
+     
+# format
+  - commit前に yarn run formatを行う
+    
