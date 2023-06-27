@@ -13,6 +13,7 @@
    - propsにFunctionsを定義しない
      - emitを使う
    - reactiveよりrefを推奨
+   - v-htmlなど脆弱性の危険性があるものは使わない
 
  - JavaScript
    - varは禁止。letも極力やめて、constを使うようにする(immutable)
