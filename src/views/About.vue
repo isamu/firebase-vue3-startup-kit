@@ -12,7 +12,7 @@ export default defineComponent({
   name: "AboutPage",
   setup() {
     useHead({
-      title: 'About page'
+      title: "About page",
     });
     return {};
   },
