@@ -10,7 +10,7 @@ import {
 const authSignIn = async (
   provider: AuthProvider,
   callback?: () => void | null,
-  errorCallback?: (error: AuthError) => void | null
+  errorCallback?: (error: AuthError) => void | null,
 ) => {
   try {
     await signInWithPopup(auth, provider);
@@ -26,7 +26,7 @@ const authSignIn = async (
 
 export const googleSignin = (
   callback?: () => void | null,
-  errorCallback?: (error: AuthError) => void | null
+  errorCallback?: (error: AuthError) => void | null,
 ) => {
   return () => {
     const provider = new GoogleAuthProvider();
@@ -37,7 +37,7 @@ export const googleSignin = (
 
 export const facebookSignin = (
   callback?: () => void | null,
-  errorCallback?: (error: AuthError) => void | null
+  errorCallback?: (error: AuthError) => void | null,
 ) => {
   return () => {
     const provider = new FacebookAuthProvider();

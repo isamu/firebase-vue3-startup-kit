@@ -56,7 +56,7 @@ export const noLoginPage = (path: string) => {
         routePush(path);
       }
     },
-    { immediate: true }
+    { immediate: true },
   );
   onUnmounted(() => {
     unwatch();
@@ -74,7 +74,7 @@ export const requireLogin = (path: string) => {
         routePush(path);
       }
     },
-    { immediate: true }
+    { immediate: true },
   );
   onUnmounted(() => {
     unwatch();

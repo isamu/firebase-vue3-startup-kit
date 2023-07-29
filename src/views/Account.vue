@@ -27,7 +27,7 @@ export default defineComponent({
         },
         (err) => {
           alert(err.message);
-        }
+        },
       ),
     };
   },
