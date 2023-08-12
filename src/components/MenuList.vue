@@ -62,8 +62,6 @@ import { useStore } from "vuex";
 import { auth } from "@/utils/firebase";
 import { signOut } from "firebase/auth";
 
-import { useLang } from "@/utils/utils";
-
 export default defineComponent({
   emits: ["closeMenu"],
   setup(_, ctx) {

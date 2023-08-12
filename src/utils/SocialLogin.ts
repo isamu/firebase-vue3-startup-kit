@@ -7,26 +7,28 @@ import {
   AuthError,
 } from "firebase/auth";
 
+type ErrorFunc = (error: AuthError) => void | null;
+
 const authSignIn = async (
   provider: AuthProvider,
   callback?: () => void | null,
-  errorCallback?: (error: AuthError) => void | null,
+  errorCallback?: ErrorFunc,
 ) => {
   try {
     await signInWithPopup(auth, provider);
     if (callback) {
       callback();
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     if (errorCallback) {
-      errorCallback(error);
+      errorCallback(error as AuthError);
     }
   }
 };
 
 export const googleSignin = (
   callback?: () => void | null,
-  errorCallback?: (error: AuthError) => void | null,
+  errorCallback?: ErrorFunc,
 ) => {
   return () => {
     const provider = new GoogleAuthProvider();
@@ -37,7 +39,7 @@ export const googleSignin = (
 
 export const facebookSignin = (
   callback?: () => void | null,
-  errorCallback?: (error: AuthError) => void | null,
+  errorCallback?: ErrorFunc,
 ) => {
   return () => {
     const provider = new FacebookAuthProvider();
