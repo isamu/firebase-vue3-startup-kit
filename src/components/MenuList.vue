@@ -63,16 +63,16 @@ import { auth } from "@/utils/firebase";
 import { signOut } from "firebase/auth";
 
 export default defineComponent({
-  emits: ["closeMenu"],
+  emits: ["close-menu"],
   setup(_, ctx) {
     const store = useStore();
 
     const handleClose = () => {
-      ctx.emit("closeMenu");
+      ctx.emit("close-menu");
     };
     const logout = () => {
       signOut(auth);
-      ctx.emit("closeMenu");
+      ctx.emit("close-menu");
     };
     return {
       handleClose,

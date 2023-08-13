@@ -18,7 +18,7 @@
               class="fixed top-0 left-0 z-30 flex h-screen w-screen"
             >
               <div class="bg-warmgray-100 flex w-64 flex-col bg-white shadow">
-                <MenuList @closeMenu="toggleMenu()" />
+                <MenuList @close-menu="toggleMenu()" />
               </div>
               <div
                 @click="toggleMenu()"
