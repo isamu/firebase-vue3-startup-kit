@@ -1,58 +1,28 @@
 <template>
   <div class="flex flex-col space-y-1 bg-white p-4">
-    <div
-      class="flex items-center rounded-lg bg-gray-200 px-4 py-2"
+    <MenuItem
       @click="handleClose"
+      link="/account"
+      icon="camera_alt"
+      title="menu.signin"
       v-if="!store.state.user"
-    >
-      <router-link :to="localizedUrl('/account')">
-        <div class="inline-flex items-center justify-center">
-          <span class="material-icons text-warmgray-600 mr-2 text-lg"
-            >camera_alt</span
-          >
-          <span class="text-warmgray-600 text-sm font-bold">ログイン</span>
-        </div>
-      </router-link>
-    </div>
+    />
+    <MenuItem @click="handleClose" link="/" icon="man" title="menu.top" />
 
-    <div
-      class="flex items-center rounded-lg bg-gray-200 px-4 py-2"
+    <MenuItem
       @click="handleClose"
+      link="/mypage"
+      icon="camera_alt"
+      title="menu.mypage"
       v-if="store.state.user"
-    >
-      <router-link :to="localizedUrl('/mypage')">
-        <div class="inline-flex items-center justify-center">
-          <span class="material-icons text-warmgray-600 mr-2 text-lg"
-            >camera_alt</span
-          >
-          <span class="text-warmgray-600 text-sm font-bold">マイページ</span>
-        </div>
-      </router-link>
-    </div>
+    />
 
-    <div
-      class="flex items-center rounded-lg bg-gray-200 px-4 py-2"
-      @click="handleClose"
-    >
-      <router-link :to="localizedUrl('/')">
-        <div class="inline-flex items-center justify-center">
-          <span class="material-icons text-warmgray-600 mr-2 text-lg">man</span>
-          <span class="text-warmgray-600 text-sm font-bold">メニュー</span>
-        </div>
-      </router-link>
-    </div>
-
-    <div
-      class="flex items-center rounded-lg bg-gray-200 px-4 py-2"
+    <MenuItem
       @click="logout"
-    >
-      <div class="inline-flex items-center justify-center">
-        <span class="material-icons text-warmgray-600 mr-2 text-lg"
-          >add_circle_outline</span
-        >
-        <span class="text-warmgray-600 text-sm font-bold">ログアウト</span>
-      </div>
-    </div>
+      icon="add_circle_outline"
+      title="menu.signout"
+      v-if="store.state.user"
+    />
   </div>
 </template>
 
@@ -62,8 +32,13 @@ import { useStore } from "vuex";
 import { auth } from "@/utils/firebase";
 import { signOut } from "firebase/auth";
 
+import MenuItem from "@/components/MenuItem.vue";
+
 export default defineComponent({
   emits: ["close-menu"],
+  components: {
+    MenuItem,
+  },
   setup(_, ctx) {
     const store = useStore();
 
@@ -76,8 +51,8 @@ export default defineComponent({
     };
     return {
       handleClose,
-      logout, 
-     store,
+      logout,
+      store,
     };
   },
 });
