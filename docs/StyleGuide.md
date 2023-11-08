@@ -3,26 +3,34 @@
    - Composition APIを使う(Not Options API)
    - propsの型を定義する
      - array/objectも、どのようなデータか定義を忘れずに。
+        - PropTypeを使う
    - watch / watchEffect / computed
      - watchは、バグの原因になるので実装には注意を。(watchを定義したときには実行されない/watchされる変数が事前にセットされる場合は呼ばれない）
+       - { immediate: true } を使う
      - watchEffectは定義時に実行される。しかし、後で実装に変更が入った場合に副作用が増える可能性もある。（追加した変数がwatch対象になり想定してないケースで更新されるなど）
      - computedのほうがわかりやすい（ただしwatchも便利）
-   - SFC(single file component)は使わない
+   - SFC(single file component)は使わない(<script setup> の利用)
      - templateで使う変数とそうでないものが区別がつかなくなる
+     - 小さなコンポーネントでのみ使う
    - importはalias pathを使う（ファイルを移動したときに、相対パスだと壊れる）
+     - from '@/hogehoge' 形式
    - propsにFunctionsを定義しない
      - emitを使う
    - reactiveよりrefを推奨
+     - hoge.valueで明示的に変更したほうが安全
+     - reactiveは挙動がわかりづらい
    - v-htmlなど脆弱性の危険性があるものは使わない
 
  - JavaScript
    - varは禁止。letも極力やめて、constを使うようにする(immutable)
-   - for(let ...) もfor ofやforEach, map, reduceを使えないか検討する
-     - Array操作はfind, some, every, includesなどを使う
+     - for(let ...) もfor ofやforEach, map, reduceを使えないか検討する
+   - Array操作はfind, some, every, includesなどを使う
    - 型は必ずつける。any/unknownは使わない。
    - Promise
      - 特別な場合を除き then, promiseではなくasync/await を使う
+     - setTimeoutも、await sleep(src/utils/utils.ts)などを使う
    - hash値は使えるときは省略記法を使う
+     - { hoge: hoge } ではなく { hoge }
    - 数値を直接ソースに書かない。定数（変数として定義する)
      - const sleepTimeSecond = 10; await sleep(sleepTimeSecond);
    - 変数名は、極力誰が読んでも意味がわかるように付ける
@@ -37,7 +45,7 @@
      - データをメソッドで操作することで、変更を一箇所にまとめられる
      - 型の定義も同時にする
  - onSnapshotのdetacherの処理を忘れずに。
- - v8ではなくv9でかく
+ - v8ではなくv9以降のライブラリででかく
 
 # i18n
  - vue-i18nを使っている
