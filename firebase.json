@@ -4,6 +4,13 @@
     "indexes": "firestore.indexes.json"
   },
   "functions": {
+    "ignore": [
+      "tests",
+      "*.sh",
+      "*.md",
+      "*.txt",
+      "**/node_modules/**"
+    ],
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint",
       "npm --prefix \"$RESOURCE_DIR\" run build"
