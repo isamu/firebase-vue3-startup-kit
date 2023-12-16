@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "format": "prettier --write 'src/**/*.{js,ts,vue}'"
+    "format": "prettier --write '{src/**/*,*}.{js,ts,vue}'"
   },
   "dependencies": {
     "@vueuse/head": "^1.0.16",
