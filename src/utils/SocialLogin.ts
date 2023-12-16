@@ -1,19 +1,9 @@
 import { auth } from "@/utils/firebase";
-import {
-  signInWithPopup,
-  GoogleAuthProvider,
-  FacebookAuthProvider,
-  AuthProvider,
-  AuthError,
-} from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, FacebookAuthProvider, AuthProvider, AuthError } from "firebase/auth";
 
 type ErrorFunc = (error: AuthError) => void | null;
 
-const authSignIn = async (
-  provider: AuthProvider,
-  callback?: () => void | null,
-  errorCallback?: ErrorFunc,
-) => {
+const authSignIn = async (provider: AuthProvider, callback?: () => void | null, errorCallback?: ErrorFunc) => {
   try {
     await signInWithPopup(auth, provider);
     if (callback) {
@@ -26,10 +16,7 @@ const authSignIn = async (
   }
 };
 
-export const googleSignin = (
-  callback?: () => void | null,
-  errorCallback?: ErrorFunc,
-) => {
+export const googleSignin = (callback?: () => void | null, errorCallback?: ErrorFunc) => {
   return () => {
     const provider = new GoogleAuthProvider();
     provider.addScope("email");
@@ -37,10 +24,7 @@ export const googleSignin = (
   };
 };
 
-export const facebookSignin = (
-  callback?: () => void | null,
-  errorCallback?: ErrorFunc,
-) => {
+export const facebookSignin = (callback?: () => void | null, errorCallback?: ErrorFunc) => {
   return () => {
     const provider = new FacebookAuthProvider();
     provider.addScope("email,user_birthday");

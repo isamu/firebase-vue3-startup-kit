@@ -5,8 +5,7 @@
       <router-link :to="localizedUrl('/about')">About</router-link>
     </template>
     <template v-else>
-      <router-link :to="localizedUrl('/')">Home</router-link> |
-      <router-link :to="localizedUrl('/about')">About</router-link> |
+      <router-link :to="localizedUrl('/')">Home</router-link> | <router-link :to="localizedUrl('/about')">About</router-link> |
       <router-link :to="localizedUrl('/account')">Signin</router-link>
     </template>
   </div>

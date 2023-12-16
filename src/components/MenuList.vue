@@ -1,28 +1,11 @@
 <template>
   <div class="flex flex-col space-y-1 bg-white p-4">
-    <MenuItem
-      @click="handleClose"
-      link="/account"
-      icon="camera_alt"
-      title="menu.signin"
-      v-if="!store.state.user"
-    />
+    <MenuItem @click="handleClose" link="/account" icon="camera_alt" title="menu.signin" v-if="!store.state.user" />
     <MenuItem @click="handleClose" link="/" icon="man" title="menu.top" />
 
-    <MenuItem
-      @click="handleClose"
-      link="/mypage"
-      icon="camera_alt"
-      title="menu.mypage"
-      v-if="store.state.user"
-    />
+    <MenuItem @click="handleClose" link="/mypage" icon="camera_alt" title="menu.mypage" v-if="store.state.user" />
 
-    <MenuItem
-      @click="logout"
-      icon="add_circle_outline"
-      title="menu.signout"
-      v-if="store.state.user"
-    />
+    <MenuItem @click="logout" icon="add_circle_outline" title="menu.signout" v-if="store.state.user" />
   </div>
 </template>
 

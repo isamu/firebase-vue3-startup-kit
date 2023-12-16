@@ -4,36 +4,28 @@
     "indexes": "firestore.indexes.json"
   },
   "functions": {
-    "ignore": [
-      "tests",
-      "*.sh",
-      "*.md",
-      "*.txt",
-      "**/node_modules/**"
-    ],
-    "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint",
-      "npm --prefix \"$RESOURCE_DIR\" run build"
-    ]
+    "ignore": ["tests", "*.sh", "*.md", "*.txt", "**/node_modules/**"],
+    "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run lint", "npm --prefix \"$RESOURCE_DIR\" run build"]
   },
   "hosting": {
     "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "headers": [{
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "headers": [
+      {
         "source": "**",
         "headers": [
-          { "key" : "Content-Security-Policy", "value": "frame-ancestors 'none'"},
-          { "key" : "X-Frame-Options", "value" : "deny" },
-          { "key" : "X-Content-Type-Options", "value" : "nosniff" },
-          { "key" : "X-XSS-Protection", "value" : "1; mode=block" },
-          { "key" : "X-Permitted-Cross-Domain-Policies", "value" : "none" },
-          { "key" : "Referrer-Policy", "value": "no-referrer" }
+          {
+            "key": "Content-Security-Policy",
+            "value": "frame-ancestors 'none'"
+          },
+          { "key": "X-Frame-Options", "value": "deny" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "X-XSS-Protection", "value": "1; mode=block" },
+          { "key": "X-Permitted-Cross-Domain-Policies", "value": "none" },
+          { "key": "Referrer-Policy", "value": "no-referrer" }
         ]
-    }],    
+      }
+    ],
     "rewrites": [
       {
         "source": "**",
