@@ -17,8 +17,10 @@ import { signOut } from "firebase/auth";
 
 import MenuItem from "@/components/MenuItem.vue";
 
+const emitClose = "close-menu";
+
 export default defineComponent({
-  emits: ["close-menu"],
+  emits: [emitClose],
   components: {
     MenuItem,
   },
@@ -26,11 +28,11 @@ export default defineComponent({
     const store = useStore();
 
     const handleClose = () => {
-      ctx.emit("close-menu");
+      ctx.emit(emitClose);
     };
     const logout = () => {
       signOut(auth);
-      ctx.emit("close-menu");
+      ctx.emit(emitClose);
     };
     return {
       handleClose,

@@ -30,6 +30,7 @@
     "autoprefixer": "^10.4.16",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-sonarjs": "^0.23.0",
     "eslint-plugin-vue": "^9.18.1",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",

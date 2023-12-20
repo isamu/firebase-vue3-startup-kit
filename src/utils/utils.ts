@@ -5,13 +5,11 @@ import router from "@/router";
 
 export const useUser = () => {
   const store = useStore();
-  const user = computed(() => store.state.user);
-  return user;
+  return computed(() => store.state.user);
 };
 export const useIsSignedIn = () => {
   const store = useStore();
-  const isSignedIn = computed(() => store.getters.isSignedIn);
-  return isSignedIn;
+  return computed(() => store.getters.isSignedIn);
 };
 
 export const useLang = () => {
