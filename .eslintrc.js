@@ -7,7 +7,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
   },
-  plugins: ["sonarjs"],
+  plugins: ["no-type-assertion", "sonarjs"],
   rules: {
     "vue/no-unused-vars": "error",
     "vue/no-reserved-component-names": "error",
