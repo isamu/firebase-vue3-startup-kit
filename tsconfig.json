@@ -11,6 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "sourceMap": true,
+    "types": ["vite/client"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
