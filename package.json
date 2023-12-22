@@ -1,11 +1,11 @@
 {
   "name": "firebase-vue3-startup-kit",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "serve": "vite",
+    "build": "vite build",
+    "lint": "eslint src",
     "format": "prettier --write '{src/**/*,*}.{js,ts,vue,json}'"
   },
   "dependencies": {
@@ -20,11 +20,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
-    "@vue/cli-plugin-eslint": "^5.0.8",
-    "@vue/cli-plugin-router": "^5.0.8",
-    "@vue/cli-plugin-typescript": "^5.0.8",
-    "@vue/cli-plugin-vuex": "^5.0.8",
-    "@vue/cli-service": "^5.0.8",
+    "@vitejs/plugin-vue": "^4.5.2",
     "@vue/compiler-sfc": "^3.3.8",
     "@vue/eslint-config-typescript": "^12.0.0",
     "autoprefixer": "^10.4.16",
@@ -37,6 +33,7 @@
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.7",
     "tailwindcss": "^3.3.5",
-    "typescript": "5.3.2"
+    "typescript": "5.3.2",
+    "vite": "^5.0.10"
   }
 }
