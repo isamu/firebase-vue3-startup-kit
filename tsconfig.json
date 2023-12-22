@@ -9,9 +9,10 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "noEmit": true,
     "sourceMap": true,
+    "types": ["vite/client"],
     "baseUrl": ".",
-    "types": ["webpack-env"],
     "paths": {
       "@/*": ["src/*"]
     },
