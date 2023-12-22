@@ -23,14 +23,15 @@ export default defineComponent({
 
     const selectedValue = ref(i18n.locale.value);
 
-    const updateValue = (value: { target: HTMLSelectElement }) => {
+    const updateValue = (event: Event) => {
       const basePath = (() => {
         if (route.params.lang) {
           return route.path.slice(route.params.lang.length + 1);
         }
         return route.path;
       })();
-      const newPath = `/${value.target.value}${basePath}`;
+      const target = event.target as HTMLSelectElement;
+      const newPath = `/${target.value}${basePath}`;
       if (newPath !== route.path) {
         router.push(newPath);
       }
