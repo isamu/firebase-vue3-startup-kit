@@ -10,7 +10,7 @@ export default defineConfig({
       typescript: true,
       overlay: false,
       eslint: {
-        lintCommand: 'eslint src"./src/**/*.{js,ts,vue}"',
+        lintCommand: 'eslint "./src/**/*.{js,ts,vue}"',
       },
     }),
   ],
