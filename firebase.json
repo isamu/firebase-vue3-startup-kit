@@ -28,6 +28,11 @@
     ],
     "rewrites": [
       {
+        "source": "/api/*",
+        "function": "hono_server",
+        "region": "asia-northeast1"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
