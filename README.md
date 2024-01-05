@@ -4,9 +4,11 @@
 
 This is a Start-Up kit for a Firebase web project, which uses Vue3 and firebase 9.
 
+This package includes vite, vue-router, pinia, tailwindcss, prettier, vue-tsc
+
 ## Requirements 
 
-- Node.js version 14 or later.
+- Node.js version 16 or later.
 
 ## Instruction
 
