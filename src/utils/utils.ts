@@ -1,15 +1,15 @@
-import { computed, onUnmounted } from "vue";
-import { useStore } from "vuex";
+import { computed, onUnmounted, watch } from "vue";
+import { useStore } from "@/store/index";
 import { useI18n } from "vue-i18n";
 import router from "@/router";
 
 export const useUser = () => {
   const store = useStore();
-  return computed(() => store.state.user);
+  return computed(() => store.user);
 };
 export const useIsSignedIn = () => {
   const store = useStore();
-  return computed(() => store.getters.isSignedIn);
+  return computed(() => store.isSignedIn);
 };
 
 export const useLang = () => {
@@ -46,8 +46,8 @@ export const noLoginPage = (path: string) => {
   const store = useStore();
   const routePush = useLocalizedRoute();
 
-  const unwatch = store.watch(
-    (state) => state.user,
+  const unwatch = watch(
+    () => store.user,
     (user) => {
       if (user) {
         routePush(path);
@@ -64,8 +64,8 @@ export const requireLogin = (path: string) => {
   const store = useStore();
   const routePush = useLocalizedRoute();
 
-  const unwatch = store.watch(
-    (state) => state.user,
+  const unwatch = watch(
+    () => store.user,
     (user) => {
       if (user === null) {
         routePush(path);

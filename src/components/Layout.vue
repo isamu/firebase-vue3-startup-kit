@@ -27,16 +27,15 @@
 
 <script lang="ts">
 import { defineComponent, reactive, onMounted, ref } from "vue";
-import { useStore } from "vuex";
 
 import { auth } from "@/utils/firebase";
 import { User } from "firebase/auth";
 
 import { useI18nParam } from "@/i18n/utils";
+import { useStore } from "@/store/index";
 
 import Languages from "@/components/Languages.vue";
 import MenuList from "@/components/MenuList.vue";
-
 interface UserData {
   user: User | null;
 }
@@ -60,9 +59,9 @@ export default defineComponent({
         if (fbuser) {
           console.log("authStateChanged:");
           user.user = fbuser;
-          store.commit("setUser", fbuser);
+          store.setUser(fbuser);
         } else {
-          store.commit("setUser", null);
+          store.setUser(null);
         }
       });
     });
