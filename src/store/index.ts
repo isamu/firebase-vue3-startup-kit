@@ -1,24 +1,20 @@
-import { createStore } from "vuex";
+import { defineStore } from "pinia";
+import { ref, computed } from "vue";
 import { User } from "firebase/auth";
 
-interface State {
-  user: User | null | undefined;
-}
+export const useStore = defineStore("store", () => {
+  const user = ref<User | null | undefined>(undefined);
 
-export default createStore<State>({
-  state: {
-    user: undefined,
-  },
-  mutations: {
-    setUser(state: State, user: User | null) {
-      state.user = user;
-    },
-  },
-  getters: {
-    isSignedIn: (state: State) => {
-      return state.user !== null && state.user !== undefined;
-    },
-  },
-  actions: {},
-  modules: {},
+  const setUser = (_user: User | null) => {
+    user.value = _user;
+  };
+
+  const isSignedIn = computed(() => {
+    return user.value !== null && user.value !== undefined;
+  });
+  return {
+    user,
+    setUser,
+    isSignedIn,
+  };
 });
