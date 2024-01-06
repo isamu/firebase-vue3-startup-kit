@@ -19,7 +19,7 @@ const handle = (app: Hono<any>) => {
     }) : new Request(url, {
       headers,
       method: req.method,
-      body,
+      body: Buffer.from((typeof body === "string") ? body : JSON.stringify(body || {})),
     }) 
     const res = await app.fetch(newRequest);
     resp.json(await res.json());
