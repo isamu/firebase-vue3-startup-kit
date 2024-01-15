@@ -28,6 +28,6 @@ const handle = (app: Hono<any>) => {
 
 const app = new Hono();
 
-app.get("/api/test", (c) => c.json({message: "Hono!"}));
+app.get("/hono_api/test", (c) => c.json({message: "Hono!"}));
 
 export const server = handle(app);

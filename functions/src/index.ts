@@ -13,3 +13,4 @@ import exportIfNeeded from "./common/exportifneeded";
 // exportIfNeeded("test", "tests/test", exports);
 
 exportIfNeeded("hono_server", "server/hono", exports);
+exportIfNeeded("express_server", "server/express", exports);

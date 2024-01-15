@@ -28,8 +28,13 @@
     ],
     "rewrites": [
       {
-        "source": "/api/*",
+        "source": "/hono_api/*",
         "function": "hono_server",
+        "region": "asia-northeast1"
+      },
+      {
+        "source": "/api/*",
+        "function": "express_server",
         "region": "asia-northeast1"
       },
       {
