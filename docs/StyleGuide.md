@@ -26,6 +26,8 @@
      - for(let ...) もfor ofやforEach, map, reduceを使えないか検討する
    - Array操作はfind, some, every, includesなどを使う
    - 型は必ずつける。any/unknownは使わない。
+     - 「as」(type assertion)は極力使わない
+     - 判別可能なユニオン型 (discriminated union)を活用する
    - Promise
      - 特別な場合を除き then, promiseではなくasync/await を使う
      - setTimeoutも、await sleep(src/utils/utils.ts)などを使う
