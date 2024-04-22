@@ -34,9 +34,14 @@
    - hash値は使えるときは省略記法を使う
      - { hoge: hoge } ではなく { hoge }
    - 数値を直接ソースに書かない。定数（変数として定義する)
-     - const sleepTimeSecond = 10; await sleep(sleepTimeSecond);
+     - const sleepTimeSecond = 10; 
+     - await sleep(sleepTimeSecond);
    - 変数名は、極力誰が読んでも意味がわかるように付ける
-      - x, ではなくmodalBoxPositionX など
+      - x, ではな くmodalBoxPositionX など
+      - 単位などもつける sleep_time_ms
+        - distance_to_home_km
+      - 同じ変数名を違う意味で複数箇所で使わない
+　　　　　　　　　　　　　　　　　- configではなく、userConfig/projectConfig
    - ifやforを深くnestさせない
    -  DRY(Don't repeat yourself)
    - 変更に強い実装を。 arrayは数が増えても動くか、順番が変わっても問題なく動作するか。
@@ -62,6 +67,16 @@
    - tailwind cssを使う
    - どうしても必要なとき以外は、styleタグには記述しない
      
+# Git
+   - rebaseは使わない
+ 　　   - 　きれいにするのはコードであってcommit履歴ではない
+   - forceは使わない
+     - forceはジェダイ・マスターのみ。
+   - こまめにcommitしてPRも読める量を素早く
+     - 意味がある変更なら1行でもcommitする
+     - commit履歴でどういう思考で変更したかがわかる
+     - 大きなPRは読めない、見落とす
+     - 小さなPRを早く回すにはレビューも素早く
 # format
   - commit前に yarn run formatを行う
     
