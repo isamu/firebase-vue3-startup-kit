@@ -6,20 +6,20 @@ This is a Start-Up kit for a Firebase web project, which uses Vue3 and firebase 
 
 This package includes vite, vue-router, pinia, tailwindcss, prettier, vue-tsc
 
-## Requirements 
+## Requirements
 
 - Node.js version 16 or later.
 
 ## Instruction
 
 1. Git clone this repository
-2. Run "yarn global add firebase-tools" to install firebase tools. 
+2. Run "yarn global add firebase-tools" to install firebase tools.
 3. Run "yarn install" once to get necessary node modules.
 4. Run "yarn install" once in the functions directory as well.
 5. Open the firebase console (from https://firebase.google.com) and add a project
 6. From the dashboard of this project, add an app and choose "web" (</>).
 7. From the setting of this app, choose "Config" (in Firebase SDK snippet)
-8. Copy the config file, and paste into src/config/project.ts file.  
+8. Copy the config file, and paste into src/config/project.ts file.
 9. Replace the word "fir-vue-startup-kit" in .firebaserc file with your Firebase project name.
 10. Open the firebase console, and create a Cloud Firestore (make it "secure" for now).
 11. Enable Firebase Hosting on the firebase console.
@@ -32,7 +32,7 @@ Because Firebase Functions is very slow in the case of cold start by default set
  - Functions will start with enough memory. `test` function in `functions/src/wrappers/tests/test.ts` run with 1GB memory.
  - Functions run in a nearby region. In my case it is Japan, so it is set in the Japanese region. Please change it to suit your location.
 
-For this reason, Functions are used in a slightly unusual way. 
+For this reason, Functions are used in a slightly unusual way.
 Functions called by the client are written in `src/index.ts` like `exportIfNeeded ("test", "tests/test", exports);`
 
 In this case, the client calls test as a function. And when the client call the test Function, the default function in `functions/src/wrappers/tests/test.ts` is called. See this file for more information.
@@ -42,7 +42,7 @@ In this case, the client calls test as a function. And when the client call the 
  - All functions put together in `src/utils/functions.ts`. You should add new functions in this file.
 
 ### Region
- 
+
 The region of Functions is set in asia-northeast1(Tokyo). If you change the region, be sure to change both Vue.js in Functions.
 
 ## i18n
@@ -84,4 +84,3 @@ Deploys the app to the Firebase cloud. You need to run "yarn run build" before t
 ### `yarn run format`
 
 Run Prettier, rewrite code as code formatting.
-
