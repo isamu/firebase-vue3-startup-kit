@@ -1,16 +1,16 @@
 # firebase-vue3-startup-kit
 
-## Purpose
+## 🎯 Purpose
 
 This is a Start-Up kit for a Firebase web project, which uses Vue3 and firebase 9.
 
 This package includes vite, vue-router, pinia, tailwindcss, prettier, vue-tsc
 
-## Requirements
+## 📋 Requirements
 
 - Node.js version 16 or later.
 
-## Instruction
+## 📖 Instruction
 
 1. Git clone this repository
 2. Run "yarn global add firebase-tools" to install firebase tools.
@@ -24,7 +24,7 @@ This package includes vite, vue-router, pinia, tailwindcss, prettier, vue-tsc
 10. Open the firebase console, and create a Cloud Firestore (make it "secure" for now).
 11. Enable Firebase Hosting on the firebase console.
 
-## Functions
+## 💻 Functions
 Because Firebase Functions is very slow in the case of cold start by default setting, this startup-kit is a bit of a custom Firebase functions.
 
 ### Functions side
@@ -45,7 +45,7 @@ In this case, the client calls test as a function. And when the client call the 
 
 The region of Functions is set in asia-northeast1(Tokyo). If you change the region, be sure to change both Vue.js in Functions.
 
-## i18n
+## 🌎 i18n
  - This startup-kit supports i18n using url path.
  - You can use one Vue file in both `/en/index` and `/jp/index` .
  - Language files are in `src/i18n/` directory.
@@ -57,7 +57,7 @@ The region of Functions is set in asia-northeast1(Tokyo). If you change the regi
  - i18n uses `vue-i18n@next`, so please refer to that for details on how to use it.
 
 
-## Available Scripts
+## 📄 Available Scripts
 
 In the project directory, you can run:
 
