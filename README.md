@@ -1,4 +1,4 @@
-# firebase-vue3-startup-kit
+# 🔥firebase-vue3-startup-kit🔥
 
 ## 🎯 Purpose
 
