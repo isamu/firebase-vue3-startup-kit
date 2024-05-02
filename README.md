@@ -24,7 +24,7 @@ This package includes vite, vue-router, pinia, tailwindcss, prettier, vue-tsc
 10. Open the firebase console, and create a Cloud Firestore (make it "secure" for now).
 11. Enable Firebase Hosting on the firebase console.
 
-## Funcitons
+## Functions
 Because Firebase Functions is very slow in the case of cold start by default setting, this startup-kit is a bit of a custom Firebase functions.
 
 ### Functions side
