@@ -4,18 +4,18 @@ import tseslint from "typescript-eslint";
 import sonarjs from "eslint-plugin-sonarjs";
 import pluginVue from 'eslint-plugin-vue';
 import vueParser from "vue-eslint-parser";
+import eslintConfigPrettier from "eslint-config-prettier";
 
 export default [
   {languageOptions: { globals: globals.browser }},
   {
     files: ["src/**/*.{vue,ts}"],
   },
-  {
-    ignores: ["lib/**/*", "*.ts"],
-  },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
+  sonarjs.configs.recommended,
+  eslintConfigPrettier,
   {
     plugins: {
       'typescript-eslint': tseslint.plugin,
@@ -29,16 +29,7 @@ export default [
       },
     },
   },
-  sonarjs.configs.recommended,
   {
-    languageOptions: {
-      globals: {
-        ...globals.es2021,
-        ...globals.node,
-      },
-      ecmaVersion: "latest",
-      sourceType: "module",
-    },
     rules: {
       indent: ["error", 2],
       "@typescript-eslint/no-unused-vars": [
