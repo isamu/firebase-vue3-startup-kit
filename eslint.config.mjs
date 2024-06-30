@@ -15,7 +15,7 @@ export default [
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
-  ...pluginVue.configs['flat/essential'],
+  ...pluginVue.configs['flat/recommended'],
   {
     plugins: {
       'typescript-eslint': tseslint.plugin,

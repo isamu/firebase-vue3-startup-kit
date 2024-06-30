@@ -1,7 +1,12 @@
 <template>
   <div>
     <select @change="updateValue">
-      <option v-for="(option, index) in languages" :value="option" :key="index" :selected="option == selectedValue ? true : false">
+      <option
+        v-for="(option, index) in languages"
+        :key="index"
+        :value="option"
+        :selected="option == selectedValue ? true : false"
+      >
         {{ $t("languages." + option) }}
       </option>
     </select>

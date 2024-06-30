@@ -1,8 +1,8 @@
 <template>
   <div class="account mt-10">
     <a
-      @click="googleSignin"
       class="inline-flex h-12 items-center justify-center rounded-lg bg-black bg-opacity-5 px-6 shadow-lg hover:bg-blue-600 hover:text-white"
+      @click="googleSignin"
     >
       Signin with Google account
     </a>
