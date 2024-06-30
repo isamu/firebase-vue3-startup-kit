@@ -10,6 +10,7 @@ export default defineConfig({
       typescript: true,
       overlay: false,
       eslint: {
+        useFlatConfig: true,
         lintCommand: 'eslint "./src/**/*.{js,ts,vue}"',
       },
     }),
