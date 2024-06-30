@@ -41,7 +41,6 @@ export default [
     },
     rules: {
       indent: ["error", 2],
-      "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
@@ -49,15 +48,14 @@ export default [
           varsIgnorePattern: "^__",
         },
       ],
+      "@typescript-eslint/no-explicit-any": "error",
       "linebreak-style": ["error", "unix"],
       quotes: ["error", "double"],
       semi: ["error", "always"],
 
+      "no-unreachable": "error",
       "vue/no-unused-vars": "error",
       "vue/no-reserved-component-names": "error",
-      "@typescript-eslint/no-explicit-any": "error",
-      "@typescript-eslint/no-unused-vars": "error",
-      "no-unreachable": "error",
       "vue/multi-word-component-names": "off",
       "sonarjs/cognitive-complexity": "error",
       "sonarjs/no-duplicate-string": "error",
