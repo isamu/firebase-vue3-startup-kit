@@ -13,6 +13,7 @@ export default defineConfig({
         useFlatConfig: true,
         lintCommand: 'eslint "./src/**/*.{js,ts,vue}"',
       },
+      vueTsc: true,
     }),
   ],
   resolve: {
