@@ -38,6 +38,11 @@
         "region": "asia-northeast1"
       },
       {
+        "source": "/v2_api/*",
+        "function": "express_server_v2",
+        "region": "asia-northeast1"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

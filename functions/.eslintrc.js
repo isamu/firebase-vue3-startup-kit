@@ -10,6 +10,11 @@ module.exports = {
     "plugin:import/warnings",
     "plugin:import/typescript"
   ],
+  settings: {
+    "import/resolver": {
+      typescript: {},
+    },
+  },
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: ["tsconfig.json", "tsconfig.dev.json"],
