@@ -1,7 +1,6 @@
 import { Hono } from "hono";
 import { Request as FunctionRequest, Response } from "firebase-functions";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const handle = (app: Hono<any>) => {
   return async (req: FunctionRequest, resp: Response) => {
     const url = new URL(`${req.protocol}://${req.hostname}${req.url}`);
