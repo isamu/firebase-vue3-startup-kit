@@ -14,7 +14,7 @@ export default [
     ignores: ["**/*js", "functions"]
   },
   eslint.configs.all,
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.strict,
   ...pluginVue.configs['flat/recommended'],
   sonarjs.configs.recommended,
   {
