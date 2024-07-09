@@ -15,7 +15,7 @@ export default [
   },
   eslint.configs.all,
   ...tseslint.configs.strict,
-  ...pluginVue.configs['flat/recommended'],
+  ...pluginVue.configs['flat/strongly-recommended'],
   sonarjs.configs.recommended,
   {
     plugins: {
