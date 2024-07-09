@@ -13,18 +13,14 @@ export const useIsSignedIn = () => {
 };
 
 export const useLang = () => {
-  const i18n = useI18n();
-
-  const lang = computed(() => {
-    return i18n.locale.value;
-  });
-
-  const localizedUrl = (path: string) => {
-    if (lang.value) {
-      return `/${lang.value}` + path;
-    }
-    return path;
-  };
+  const i18n = useI18n(),
+    lang = computed(() => i18n.locale.value),
+    localizedUrl = (path: string) => {
+      if (lang.value) {
+        return `/${lang.value}${path}`;
+      }
+      return path;
+    };
 
   return {
     lang,
@@ -32,7 +28,12 @@ export const useLang = () => {
   };
 };
 
-export const sleep = (milliseconds: number) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+export const sleep = (milliseconds: number) =>
+  new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, milliseconds);
+  });
 
 export const useLocalizedRoute = () => {
   const { localizedUrl } = useLang();
@@ -43,36 +44,34 @@ export const useLocalizedRoute = () => {
 };
 
 export const noLoginPage = (path: string) => {
-  const store = useStore();
-  const routePush = useLocalizedRoute();
-
-  const unwatch = watch(
-    () => store.user,
-    (user) => {
-      if (user) {
-        routePush(path);
-      }
-    },
-    { immediate: true },
-  );
+  const store = useStore(),
+    routePush = useLocalizedRoute(),
+    unwatch = watch(
+      () => store.user,
+      (user) => {
+        if (user) {
+          routePush(path);
+        }
+      },
+      { immediate: true },
+    );
   onUnmounted(() => {
     unwatch();
   });
 };
 
 export const requireLogin = (path: string) => {
-  const store = useStore();
-  const routePush = useLocalizedRoute();
-
-  const unwatch = watch(
-    () => store.user,
-    (user) => {
-      if (user === null) {
-        routePush(path);
-      }
-    },
-    { immediate: true },
-  );
+  const store = useStore(),
+    routePush = useLocalizedRoute(),
+    unwatch = watch(
+      () => store.user,
+      (user) => {
+        if (user === null) {
+          routePush(path);
+        }
+      },
+      { immediate: true },
+    );
   onUnmounted(() => {
     unwatch();
   });

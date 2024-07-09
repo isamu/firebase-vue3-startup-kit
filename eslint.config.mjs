@@ -7,20 +7,22 @@ import vueParser from "vue-eslint-parser";
 import eslintConfigPrettier from "eslint-config-prettier";
 
 export default [
-  {languageOptions: { globals: globals.browser }},
   {
     files: ["src/**/*.{vue,ts}"],
   },
-  eslint.configs.recommended,
+  {
+    ignores: ["**/*js", "functions"]
+  },
+  eslint.configs.all,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
   sonarjs.configs.recommended,
-  eslintConfigPrettier,
   {
     plugins: {
       'typescript-eslint': tseslint.plugin,
     },
     languageOptions: {
+      globals: globals.browser,
       parserOptions: {
         parser: tseslint.parser,
         project: './tsconfig.json',
@@ -45,6 +47,12 @@ export default [
       semi: ["error", "always"],
 
       "no-unreachable": "error",
+      "one-var": "off",
+      "no-undefined": "off",
+      "sort-keys": "off",
+      "sort-vars": "off",
+      "sort-imports": "off",
+      "no-magic-numbers": "off",
       "vue/no-unused-vars": "error",
       "vue/no-reserved-component-names": "error",
       "vue/multi-word-component-names": "off",
@@ -86,4 +94,5 @@ export default [
 
     },
   },
+  eslintConfigPrettier,
 ];

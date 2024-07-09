@@ -26,7 +26,7 @@ export default defineComponent({
           routePush("/mypage");
         },
         (err) => {
-          alert(err.message);
+          console.log(err.message);
         },
       ),
     };

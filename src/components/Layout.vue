@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, onMounted, ref } from "vue";
+import { defineComponent, onMounted, reactive, ref } from "vue";
 
 import { auth } from "@/utils/firebase";
 import { User } from "firebase/auth";
@@ -46,11 +46,10 @@ export default defineComponent({
     Languages,
     MenuList,
   },
-  async setup() {
-    const store = useStore();
-    const user = reactive<UserData>({ user: null });
-
-    const menu = ref(false);
+  setup() {
+    const store = useStore(),
+      user = reactive<UserData>({ user: null }),
+      menu = ref(false);
 
     useI18nParam();
 

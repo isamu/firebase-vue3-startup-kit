@@ -24,16 +24,15 @@ export default defineComponent({
     MenuItem,
   },
   emits: [emitClose],
-  setup(_, ctx) {
-    const store = useStore();
-
-    const handleClose = () => {
-      ctx.emit(emitClose);
-    };
-    const logout = () => {
-      signOut(auth);
-      ctx.emit(emitClose);
-    };
+  setup(__, ctx) {
+    const store = useStore(),
+      handleClose = () => {
+        ctx.emit(emitClose);
+      },
+      logout = () => {
+        signOut(auth);
+        ctx.emit(emitClose);
+      };
     return {
       handleClose,
       logout,
