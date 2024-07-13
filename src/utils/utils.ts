@@ -31,7 +31,7 @@ export const useLang = () => {
 export const sleep = (milliseconds: number) =>
   new Promise((resolve) => {
     setTimeout(() => {
-      resolve();
+      resolve(true);
     }, milliseconds);
   });
 
