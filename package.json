@@ -13,9 +13,9 @@
     "core-js": "^3.37.1",
     "firebase": "^10.13.0",
     "pinia": "^2.2.2",
-    "vue": "^3.4.31",
+    "vue": "^3.4.38",
     "vue-i18n": "^9.13.1",
-    "vue-router": "^4.4.0"
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
