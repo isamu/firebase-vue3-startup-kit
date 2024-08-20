@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { useHead } from "@vueuse/head";
+import { useHead } from "@unhead/vue";
 
 export default defineComponent({
   name: "AboutPage",
