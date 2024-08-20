@@ -10,8 +10,8 @@
   },
   "type": "module",
   "dependencies": {
-    "@vueuse/head": "^1.0.16",
-    "core-js": "^3.37.1",
+    "@vueuse/head": "^2.0.0",
+    "core-js": "^3.38.0",
     "firebase": "^10.13.0",
     "pinia": "^2.2.2",
     "vue": "^3.4.38",
