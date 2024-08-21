@@ -13,9 +13,9 @@ export const i18nUtils = (app: App) => {
 };
 
 export const useI18nParam = () => {
-  const route = useRoute(),
-    i18n = useI18n(),
-    lang = computed(() => (route.params.lang as string) || "en");
+  const route = useRoute();
+  const i18n = useI18n();
+  const lang = computed(() => (route.params.lang as string) || "en");
   watch(lang, () => {
     i18n.locale.value = lang.value;
   });
