@@ -46,6 +46,7 @@ export default [
       quotes: ["error", "double"],
       semi: ["error", "always"],
 
+      "capitalized-comments": "off",
       "no-unreachable": "error",
       "one-var": "off",
       "no-undefined": "off",
@@ -57,7 +58,6 @@ export default [
       "vue/no-reserved-component-names": "error",
       "vue/multi-word-component-names": "off",
       "sonarjs/cognitive-complexity": "error",
-      "sonarjs/no-duplicate-string": "error",
       "sonarjs/elseif-without-else": "error",
       "sonarjs/max-switch-cases": "error",
       "sonarjs/no-all-duplicated-branches": "error",

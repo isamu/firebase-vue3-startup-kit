@@ -4,6 +4,9 @@ import path from "path";
 import checker from "vite-plugin-checker";
 
 export default defineConfig({
+  define: {
+    global: {},
+  },
   plugins: [
     vue(),
     checker({
