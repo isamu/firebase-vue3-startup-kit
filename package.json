@@ -15,7 +15,7 @@
     "firebase": "^10.13.2",
     "pinia": "^2.2.2",
     "vue": "^3.5.8",
-    "vue-i18n": "^10.0.3",
+    "vue-i18n": "^10.0.5",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
