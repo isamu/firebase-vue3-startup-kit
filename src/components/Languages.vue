@@ -17,23 +17,23 @@ import { languages } from "@/i18n/index";
 
 export default defineComponent({
   setup() {
-    const route = useRoute(),
-      router = useRouter(),
-      i18n = useI18n(),
-      selectedValue = ref(i18n.locale.value),
-      updateValue = (event: Event) => {
-        const basePath = (() => {
-            if (route.params.lang) {
-              return route.path.slice(route.params.lang.length + 1);
-            }
-            return route.path;
-          })(),
-          target = event.target as HTMLSelectElement,
-          newPath = `/${target.value}${basePath}`;
-        if (newPath !== route.path) {
-          router.push(newPath);
-        }
-      };
+    const route = useRoute();
+    const router = useRouter();
+    const i18n = useI18n();
+    const selectedValue = ref(i18n.locale.value);
+    const updateValue = (event: Event) => {
+      const basePath = (() => {
+          if (route.params.lang) {
+            return route.path.slice(route.params.lang.length + 1);
+          }
+          return route.path;
+        })(),
+        target = event.target as HTMLSelectElement,
+        newPath = `/${target.value}${basePath}`;
+      if (newPath !== route.path) {
+        router.push(newPath);
+      }
+    };
     return {
       languages,
       selectedValue,

@@ -13,14 +13,14 @@ export const useIsSignedIn = () => {
 };
 
 export const useLang = () => {
-  const i18n = useI18n(),
-    lang = computed(() => i18n.locale.value),
-    localizedUrl = (path: string) => {
-      if (lang.value) {
-        return `/${lang.value}${path}`;
-      }
-      return path;
-    };
+  const i18n = useI18n();
+  const lang = computed(() => i18n.locale.value);
+  const localizedUrl = (path: string) => {
+    if (lang.value) {
+      return `/${lang.value}${path}`;
+    }
+    return path;
+  };
 
   return {
     lang,

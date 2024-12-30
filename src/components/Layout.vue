@@ -47,9 +47,9 @@ export default defineComponent({
     MenuList,
   },
   setup() {
-    const store = useStore(),
-      user = reactive<UserData>({ user: null }),
-      menu = ref(false);
+    const store = useStore();
+    const user = reactive<UserData>({ user: null });
+    const menu = ref(false);
 
     useI18nParam();
 
