@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { Request as FunctionRequest, Response } from "firebase-functions";
+import { Request as FunctionRequest, Response } from "firebase-functions/v1";
 
 const handle = (app: Hono<any>) => {
   return async (req: FunctionRequest, resp: Response) => {

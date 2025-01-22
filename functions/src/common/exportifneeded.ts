@@ -4,7 +4,7 @@ function isFunctionCalled(functionName: string): boolean {
 
 export default function exportIfNeeded(functionName: string, fileName: string, exports: any): void {
   if (isFunctionCalled(functionName)) {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     exports[functionName] = require(`../wrappers/${fileName}`).default;
   }
 }
