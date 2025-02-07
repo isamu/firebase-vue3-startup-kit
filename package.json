@@ -12,7 +12,7 @@
   "dependencies": {
     "@unhead/vue": "^1.11.18",
     "core-js": "^3.40.0",
-    "firebase": "^11.2.0",
+    "firebase": "^11.3.0",
     "pinia": "^2.3.1",
     "strip-ansi": "^7.1.0",
     "vue": "^3.5.13",
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
-    "@tailwindcss/postcss": "^4.0.3",
+    "@tailwindcss/postcss": "^4.0.4",
     "@typescript-eslint/eslint-plugin": "^8.23.0",
     "@typescript-eslint/parser": "^8.23.0",
     "@vitejs/plugin-vue": "^5.2.1",
@@ -34,10 +34,10 @@
     "postcss": "^8.5.1",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^4.0.3",
+    "tailwindcss": "^4.0.4",
     "typescript": "5.7.3",
     "typescript-eslint": "^8.23.0",
-    "vite": "^6.0.11",
+    "vite": "^6.1.0",
     "vite-plugin-checker": "^0.8.0",
     "vue-eslint-parser": "^9.4.3",
     "vue-tsc": "^2.2.0"
