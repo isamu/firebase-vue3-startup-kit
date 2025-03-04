@@ -11,9 +11,9 @@
   "type": "module",
   "dependencies": {
     "@unhead/vue": "^1.11.18",
-    "core-js": "^3.40.0",
-    "firebase": "^11.3.1",
-    "pinia": "^2.3.1",
+    "core-js": "^3.41.0",
+    "firebase": "^11.4.0",
+    "pinia": "^3.0.1",
     "strip-ansi": "^7.1.0",
     "vue": "^3.5.13",
     "vue-i18n": "^11.1.1",
