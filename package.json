@@ -37,7 +37,7 @@
     "tailwindcss": "^4.0.14",
     "typescript": "5.8.2",
     "typescript-eslint": "^8.26.1",
-    "vite": "^6.2.2",
+    "vite": "^6.2.3",
     "vite-plugin-checker": "^0.9.0",
     "vue-eslint-parser": "^10.1.1",
     "vue-tsc": "^3.0.0-alpha.2"
