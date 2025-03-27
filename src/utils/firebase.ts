@@ -11,4 +11,3 @@ const firebaseApp = initializeApp(firebaseConfig);
 export const db = getFirestore();
 export const auth = getAuth();
 export const functions = getFunctions(firebaseApp, "asia-northeast1");
-//Export const functions = getFunctions(firebaseApp);
