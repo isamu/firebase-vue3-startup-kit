@@ -15,3 +15,5 @@ import exportIfNeeded from "./common/exportifneeded";
 exportIfNeeded("hono_server", "server/hono", exports);
 exportIfNeeded("express_server", "server/express", exports);
 exportIfNeeded("express_server_v2", "server/express_v2", exports);
+
+exportIfNeeded("streamingCall", "server/streaming", exports);
