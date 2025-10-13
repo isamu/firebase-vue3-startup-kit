@@ -76,7 +76,6 @@ export default [
       "sonarjs/no-inverted-boolean-check": "error",
       "sonarjs/no-nested-switch": "error",
       "sonarjs/no-nested-template-literals": "error",
-      "sonarjs/no-one-iteration-loop": "error",
       "sonarjs/no-redundant-boolean": "error",
       "sonarjs/no-redundant-jump": "error",
       "sonarjs/no-same-line-conditional": "error",
