@@ -27,7 +27,7 @@
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-sonarjs": "^3.0.2",
     "prettier": "^3.5.3",
-    "typescript": "5.8.3"
+    "typescript": "5.9.3"
   },
   "private": true
 }
