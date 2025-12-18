@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
-import { createHead } from "@unhead/vue";
+import { createHead } from '@unhead/vue/client'
 import { createI18n } from "vue-i18n";
 import App from "./App.vue";
 import "./index.css";
