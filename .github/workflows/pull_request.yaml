@@ -7,9 +7,11 @@ on:
   pull_request:
     branches:
       - main
+      - master
   push:
     branches:
       - main
+      - master
 
 jobs:
   lint_test:
@@ -25,9 +27,28 @@ jobs:
       uses: actions/setup-node@v6
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        cache: 'yarn'
     - run: yarn install
     - run: yarn run lint
     - run: yarn run build
 
+  functions_lint_build:
 
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [24.x]
+    defaults:
+      run:
+        working-directory: functions
+    steps:
+    - uses: actions/checkout@v7
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v6
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+        cache-dependency-path: functions/yarn.lock
+    - run: yarn install
+    - run: yarn run lint
+    - run: yarn run build
