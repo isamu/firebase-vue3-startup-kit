@@ -1,4 +1,4 @@
-import * as express from "express";
+import express from "express";
 
 export const hello_response = async (req: express.Request, res: express.Response) => {
   res.json({ message: "hello" });
