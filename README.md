@@ -2,13 +2,13 @@
 
 ## 🎯 Purpose
 
-This is a Start-Up kit for a Firebase web project, which uses Vue3 and firebase 9.
+This is a Start-Up kit for a Firebase web project, which uses Vue3 and firebase 12.
 
 This package includes vite, vue-router, pinia, tailwindcss, prettier, vue-tsc
 
 ## 📋 Requirements
 
-- Node.js version 16 or later.
+- Node.js version 24 (used by CI and the Cloud Functions runtime).
 
 ## 📖 Instruction
 
@@ -33,7 +33,7 @@ Because Firebase Functions is very slow in the case of cold start by default set
  - Functions run in a nearby region. In my case it is Japan, so it is set in the Japanese region. Please change it to suit your location.
 
 For this reason, Functions are used in a slightly unusual way.
-Functions called by the client are written in `src/index.ts` like `exportIfNeeded ("test", "tests/test", exports);`
+Functions called by the client are written in `functions/src/index.ts` like `exportIfNeeded ("test", "tests/test", exports);`
 
 In this case, the client calls test as a function. And when the client call the test Function, the default function in `functions/src/wrappers/tests/test.ts` is called. See this file for more information.
 
@@ -54,7 +54,7 @@ The region of Functions is set in asia-northeast1(Tokyo). If you change the regi
     - If you want to add new language, add the language to `index.ts`, add the `{language}.ts`, and add language to `language.ts`.
  - See also `src/router/index.ts` for how to switch languages with url path.
  - You can use the language switching pull-down in `src/components/Languages.vue`. This file needs to read `route.param.lang`, so don't use it in `App.vue` and `Layout.vue`. Other than that, it can be used anywhere.
- - i18n uses `vue-i18n@next`, so please refer to that for details on how to use it.
+ - i18n uses `vue-i18n` v11, so please refer to that for details on how to use it.
 
 
 ## 📄 Available Scripts
@@ -76,6 +76,10 @@ It correctly bundles Vue in production mode and optimizes the build for the best
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+### `yarn run lint`
+
+Runs ESLint against the `src` directory.
 
 ### `firebase deploy`
 
