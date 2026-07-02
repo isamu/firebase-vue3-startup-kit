@@ -153,8 +153,8 @@ you move regions. Hosting rewrites `/hono_api/*`, `/api/*`, `/v2_api/*` to serve
 
 - **Rules default-deny**: `firestore.rules` ends with `allow read, write: if false`; open only
   what each collection needs. `storage.rules` requires `request.auth != null`.
-- **App Check**: v2 callables check `context.app` (see `wrappers/func.ts`); `wrappers/firebase.ts`
-  carries an `enforceAppCheck` flag.
+- **App Check**: enforce it on callables — either the `enforceAppCheck: true` option, or a manual
+  guard (`if (request.app == undefined) throw new HttpsError(...)`).
 - **Hosting headers**: CSP `frame-ancestors 'none'`, `X-Frame-Options: deny`, `nosniff`,
   `no-referrer` (`firebase.json`).
 - Run skill **firebase-security-review** before deploying rule or function changes.
