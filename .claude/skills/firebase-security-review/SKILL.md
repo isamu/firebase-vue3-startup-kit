@@ -15,29 +15,29 @@ why it matters, and the concrete fix. Verify claims against the code — do not 
   (deep-dive with the **firestore-rules** skill).
 
 ## 2. App Check
-- `functions/src/wrappers/firebase.ts` → `enforceAppCheck`. If `false`, callables are reachable
-  by anything with the public config.
-- v2 callables should reject un-attested calls:
+- Callables should enforce App Check — either the `enforceAppCheck: true` option, or a manual
+  guard that rejects un-attested calls:
   ```ts
-  if (context.app == undefined) {
+  if (request.app == undefined) {
     throw new HttpsError("failed-precondition", "…App Check verified app.");
   }
   ```
-  Confirm each `onCall` in `functions/src/wrappers/` has this guard (see `wrappers/func.ts`).
+  Confirm each `onCall` in `functions/src/wrappers/` enforces this. Without it, callables are
+  reachable by anything holding the public config.
 
 ## 3. Secrets vs. public config
 - `src/config/project.ts` firebaseConfig is **public web config — not a leak.** Don't flag it.
 - DO flag: service-account JSON, private keys, API secrets, or tokens committed anywhere, or
-  secrets hardcoded in `functions/` instead of `functions.config()` / Secret Manager
-  (`secretKeys` in `wrappers/firebase.ts`). Grep for `PRIVATE KEY`, `secret`, `token`, `.json`
-  credential files.
+  secrets hardcoded in `functions/` instead of Cloud Secret Manager (`defineSecret` from
+  `firebase-functions/params`). Grep for `PRIVATE KEY`, `secret`, `token`, `.json` credential
+  files.
 
 ## 4. Function authorization & input
-- Every `onCall` that touches user data must check `context.auth` before acting — a signed-out
+- Every `onCall` that touches user data must check `request.auth` before acting — a signed-out
   or wrong user must not read/write another's data.
 - HTTP servers (`functions/functions/server/*` hono/express) exposed via hosting rewrites
   (`/api/*`, `/hono_api/*`, `/v2_api/*`): validate/authorize each route; don't trust the body.
-- Set sane `runWith` limits (`maxInstances`, `timeoutSeconds`, `memory`) to cap abuse/cost.
+- Set sane resource limits in the function options (`maxInstances`, `timeoutSeconds`, `memory`) to cap abuse/cost.
 
 ## 5. Hosting headers (`firebase.json`)
 - Confirm CSP `frame-ancestors 'none'`, `X-Frame-Options: deny`, `X-Content-Type-Options:
