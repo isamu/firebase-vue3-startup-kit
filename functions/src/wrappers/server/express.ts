@@ -1,11 +1,12 @@
-import * as functions from "firebase-functions/v1";
+import { onRequest } from "firebase-functions/v2/https";
 import * as express from "../../functions/server/express";
 
-export default functions
-  .region("asia-northeast1")
-  .runWith({
+export default onRequest(
+  {
+    region: "asia-northeast1",
     maxInstances: 5,
     timeoutSeconds: 10,
-    memory: "1GB" as const,
-  })
-  .https.onRequest(express.app);
+    memory: "1GiB",
+  },
+  express.app,
+);

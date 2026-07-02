@@ -29,13 +29,13 @@ Because Firebase Functions is very slow in the case of cold start by default set
 
 ### Functions side
  - Functions is invoked using a wrapper function (`exportIfNeeded` function in `functions/src/common/exportifneeded.ts`). It loads only the functions it needs.
- - Functions will start with enough memory. `test` function in `functions/src/wrappers/tests/test.ts` run with 1GB memory.
- - Functions run in a nearby region. In my case it is Japan, so it is set in the Japanese region. Please change it to suit your location.
+ - Each function is split in two: the logic lives in `functions/src/functions/`, and its Cloud Functions (2nd gen) binding — region, memory, timeout — lives in `functions/src/wrappers/`.
+ - Functions run in a nearby region. In my case it is Japan, so it is set in the Japanese region (`asia-northeast1`). Please change it to suit your location.
 
 For this reason, Functions are used in a slightly unusual way.
-Functions called by the client are written in `functions/src/index.ts` like `exportIfNeeded ("test", "tests/test", exports);`
+Functions exposed to the client are registered in `functions/src/index.ts` like `exportIfNeeded("hono_server", "server/hono", exports);`
 
-In this case, the client calls test as a function. And when the client call the test Function, the default function in `functions/src/wrappers/tests/test.ts` is called. See this file for more information.
+The first argument is the deployed function name; the second is the wrapper file under `functions/src/wrappers/`. When that function is invoked, the default export of `functions/src/wrappers/server/hono.ts` runs. See that file for more information.
 
 ###  Vue.js side.
  - The functions settings are in `src/utils/firebase.ts`. By default, it set to call asia-northeast1 (Tokyo) region.
