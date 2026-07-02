@@ -39,7 +39,7 @@
       },
       {
         "source": "/v2_api/*",
-        "function": "express_server_v2",
+        "function": "express_server",
         "region": "asia-northeast1"
       },
       {

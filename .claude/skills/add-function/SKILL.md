@@ -38,9 +38,9 @@ export default onCall({ region: REGION, memory: "1GiB", maxInstances: 5 }, async
   return await greet(request);
 });
 ```
-For an HTTP endpoint follow the v1 hono/express wrappers instead
-(`wrappers/server/hono.ts` → `.region(...).runWith({...}).https.onRequest(...)`), and add a
-hosting rewrite in `firebase.json`.
+For an HTTP endpoint follow the hono/express wrappers
+(`wrappers/server/hono.ts` → `onRequest({ region, memory, ... }, handler)` from
+`firebase-functions/v2/https`), and add a hosting rewrite in `firebase.json`.
 
 ### 3. Register — `functions/src/index.ts`
 ```ts
