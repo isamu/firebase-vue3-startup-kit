@@ -20,6 +20,9 @@
     "firebase-functions": "^7.2.5",
     "hono": "^4.12.30"
   },
+  "resolutions": {
+    "uuid": "14.0.1"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^8.63.0",
