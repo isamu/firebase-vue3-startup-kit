@@ -40,6 +40,13 @@ interface UserData {
   user: User | null;
 }
 
+const watchAuthState = (store: ReturnType<typeof useStore>, user: UserData) => {
+  auth.onAuthStateChanged((fbuser) => {
+    user.user = fbuser;
+    store.setUser(fbuser);
+  });
+};
+
 export default defineComponent({
   name: "AppLayout",
   components: {
@@ -52,17 +59,8 @@ export default defineComponent({
     const menu = ref(false);
 
     useI18nParam();
-
     onMounted(() => {
-      auth.onAuthStateChanged((fbuser) => {
-        if (fbuser) {
-          console.log("authStateChanged:");
-          user.user = fbuser;
-          store.setUser(fbuser);
-        } else {
-          store.setUser(null);
-        }
-      });
+      watchAuthState(store, user);
     });
 
     const toggleMenu = () => {

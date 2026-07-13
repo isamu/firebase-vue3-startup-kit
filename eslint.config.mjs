@@ -2,7 +2,7 @@ import eslint from "@eslint/js";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 import sonarjs from "eslint-plugin-sonarjs";
-import pluginVue from 'eslint-plugin-vue';
+import pluginVue from "eslint-plugin-vue";
 import vueParser from "vue-eslint-parser";
 import eslintConfigPrettier from "eslint-config-prettier";
 
@@ -11,23 +11,24 @@ export default [
     files: ["src/**/*.{vue,ts}"],
   },
   {
-    ignores: ["**/*js", "functions"]
+    ignores: ["**/*js", "functions"],
   },
   eslint.configs.all,
-  ...tseslint.configs.strict,
-  ...pluginVue.configs['flat/strongly-recommended'],
+  ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.stylisticTypeChecked,
+  ...pluginVue.configs["flat/strongly-recommended"],
   sonarjs.configs.recommended,
   {
     plugins: {
-      'typescript-eslint': tseslint.plugin,
+      "typescript-eslint": tseslint.plugin,
     },
     languageOptions: {
       globals: globals.browser,
       parserOptions: {
         parser: tseslint.parser,
-        project: './tsconfig.json',
-        extraFileExtensions: ['.vue'],
-        sourceType: 'module',
+        project: "./tsconfig.json",
+        extraFileExtensions: [".vue"],
+        sourceType: "module",
       },
     },
   },
@@ -39,6 +40,7 @@ export default [
         {
           argsIgnorePattern: "^__",
           varsIgnorePattern: "^__",
+          caughtErrorsIgnorePattern: "^__",
         },
       ],
       "@typescript-eslint/no-explicit-any": "error",
@@ -48,15 +50,31 @@ export default [
 
       "capitalized-comments": "off",
       "no-unreachable": "error",
+      "no-void": ["error", { allowAsStatement: true }],
       "one-var": "off",
       "no-undefined": "off",
       "sort-keys": "off",
       "sort-vars": "off",
       "sort-imports": "off",
       "no-magic-numbers": "off",
+
+      // Compact & DRY: hard ceilings on size, nesting, complexity, and arity
+      "max-lines": ["error", { max: 200, skipBlankLines: true, skipComments: true }],
+      "max-lines-per-function": ["error", { max: 20, skipBlankLines: true, skipComments: true }],
+      "max-statements": ["error", 10],
+      complexity: ["error", 10],
+      "max-depth": ["error", 3],
+      "max-nested-callbacks": ["error", 3],
+      "max-params": ["error", 3],
+
       "vue/no-unused-vars": "error",
+      "vue/no-unused-refs": "error",
       "vue/no-reserved-component-names": "error",
       "vue/multi-word-component-names": "off",
+      "vue/require-explicit-emits": "error",
+      "vue/no-mutating-props": "error",
+      "vue/no-useless-v-bind": "error",
+      "vue/no-v-html": "error",
       "sonarjs/cognitive-complexity": "error",
       "sonarjs/elseif-without-else": "error",
       "sonarjs/max-switch-cases": "error",
@@ -90,7 +108,6 @@ export default [
       "sonarjs/prefer-while": "error",
       "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
       "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
-
     },
   },
   eslintConfigPrettier,

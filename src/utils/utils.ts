@@ -39,7 +39,7 @@ export const useLocalizedRoute = () => {
   const { localizedUrl } = useLang();
 
   return (path: string) => {
-    router.push(localizedUrl(path));
+    void router.push(localizedUrl(path));
   };
 };
 

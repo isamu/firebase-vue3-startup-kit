@@ -10,15 +10,15 @@ export default defineComponent({
   setup() {
     requireLogin("/account");
 
-    (async () => {
+    void (async () => {
       const { stream, data } = await streamingFcuntion.stream();
       for await (const chunk of stream) {
         console.log(chunk);
       }
       const allData = await data;
       console.log(allData);
-    })()
-    
+    })();
+
     return {};
   },
 });

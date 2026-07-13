@@ -30,7 +30,7 @@ export default defineComponent({
       ctx.emit(emitClose);
     };
     const logout = () => {
-      signOut(auth);
+      void signOut(auth);
       ctx.emit(emitClose);
     };
     return {
