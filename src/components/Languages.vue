@@ -15,6 +15,14 @@ import { useI18n } from "vue-i18n";
 
 import { languages } from "@/i18n/index";
 
+const buildLangPath = (route: ReturnType<typeof useRoute>, langValue: string) => {
+  const { lang } = route.params;
+  if (typeof lang === "string") {
+    return `/${langValue}${route.path.slice(lang.length + 1)}`;
+  }
+  return `/${langValue}${route.path}`;
+};
+
 export default defineComponent({
   setup() {
     const route = useRoute();
@@ -22,16 +30,10 @@ export default defineComponent({
     const i18n = useI18n();
     const selectedValue = ref(i18n.locale.value);
     const updateValue = (event: Event) => {
-      const basePath = (() => {
-          if (route.params.lang) {
-            return route.path.slice(route.params.lang.length + 1);
-          }
-          return route.path;
-        })(),
-        target = event.target as HTMLSelectElement,
-        newPath = `/${target.value}${basePath}`;
+      const target = event.target as HTMLSelectElement;
+      const newPath = buildLangPath(route, target.value);
       if (newPath !== route.path) {
-        router.push(newPath);
+        void router.push(newPath);
       }
     };
     return {

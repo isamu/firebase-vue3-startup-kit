@@ -8,7 +8,7 @@ import Account from "@/views/Account.vue";
 import About from "@/views/About.vue";
 import MyPage from "@/views/MyPage.vue";
 
-const routeChildren: Array<RouteRecordRaw> = [
+const routeChildren: RouteRecordRaw[] = [
   {
     path: "",
     component: Home,
@@ -26,7 +26,7 @@ const routeChildren: Array<RouteRecordRaw> = [
     component: MyPage,
   },
 ];
-const routes: Array<RouteRecordRaw> = [
+const routes: RouteRecordRaw[] = [
   {
     path: "/",
     component: Layout,
