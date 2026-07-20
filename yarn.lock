@@ -105,6 +105,14 @@
     "@emnapi/wasi-threads" "1.2.2"
     tslib "^2.4.0"
 
+"@emnapi/core@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/@emnapi/core/-/core-1.11.2.tgz#fab0a0f3c492d11f5a9ac9065d0d73955ee1c1c9"
+  integrity sha512-TC8MkTuZUtcTSiFeuC0ksCh9QIJ5+F21MvZ4Wn4ORfYaFJ/0dsiudv5tVkejgwZlwQ39jL9WWDe2lz8x0WglOA==
+  dependencies:
+    "@emnapi/wasi-threads" "1.2.2"
+    tslib "^2.4.0"
+
 "@emnapi/runtime@1.10.0":
   version "1.10.0"
   resolved "https://npm.flatt.tech/@emnapi/runtime/-/runtime-1.10.0.tgz#4b260c0d3534204e98c6110b8db1a987d26ec87c"
@@ -116,6 +124,13 @@
   version "1.11.1"
   resolved "https://npm.flatt.tech/@emnapi/runtime/-/runtime-1.11.1.tgz#58f1f3d5d81a9b12f793ab688c96371901027c24"
   integrity sha512-vgj7R3y3Wgx24IQaGPA/R6YFXLHVMOZ0uVEyIQPaWs+rd1AzfEMXlAC22FYwO1XkKR6NPsq7mUandH8oIRdZFw==
+  dependencies:
+    tslib "^2.4.0"
+
+"@emnapi/runtime@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-1.11.2.tgz#eb22f04d76febfdf4f87fdaff54c8a53f6bf0dbd"
+  integrity sha512-kyOl3X0DuTiT1h2ft8r2fYO8JYtU9a9Xis/zBSiGArNaagCOWx90N1k2wxp18czFDH+OgcWGb5ZP/XMt3dcyPA==
   dependencies:
     tslib "^2.4.0"
 
@@ -726,160 +741,160 @@
   resolved "https://npm.flatt.tech/@oxc-parser/binding-android-arm-eabi/-/binding-android-arm-eabi-0.132.0.tgz#f88d600252349b5e380e695cadf889cea896f676"
   integrity sha512-KrLaPWa5c9Y7LkW+rKkaUE3y7DBDrQtaf7rlsSDfv6KAHUjgzAIRA761Lrrp6//Yd/Rlie/yEOt9YENCoJnOcw==
 
-"@oxc-parser/binding-android-arm-eabi@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-android-arm-eabi/-/binding-android-arm-eabi-0.139.0.tgz#66b047889e495b3b2c4dab246609a041e5c40e64"
-  integrity sha512-22EsXTA3Vc7OvrF4bfT48PFln2UbxkVgrp/Tm32qLw76Dv7SmcInfClJe6yPYamnli6HiqasnESZ5ezN+X4ybg==
+"@oxc-parser/binding-android-arm-eabi@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-android-arm-eabi/-/binding-android-arm-eabi-0.140.0.tgz#1e263aca7aaf38e989000e50025b2b21834a8eda"
+  integrity sha512-ZfjDZ422mo7eo3b3VltqNsV9kmv1qt/sPEAMSl64iOSwhVfd0eIZ9LB79Mbs1xYXJnk7WSROwzBCKDIiVxPTvQ==
 
 "@oxc-parser/binding-android-arm64@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-android-arm64/-/binding-android-arm64-0.132.0.tgz#ef91deec0305c54fa6c7b519f82da63d36b49788"
   integrity sha512-SThDrSeamB/kG2+NxcJ5/wSLcV6dUqDknrPLqFYQ0ST/55mtBP4M7Q/f3QbubH6aAd11wpzZn/nwbVRSdobOpg==
 
-"@oxc-parser/binding-android-arm64@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-android-arm64/-/binding-android-arm64-0.139.0.tgz#4c92da818d5f301daa9481cd568982a4392a1be7"
-  integrity sha512-uASQkZV+CUQ6xXvoMzDQyfhd8OMusdv2FyCPfAi5ZDYptesapJlw7erhpGi1Lc+U8QjQV2JUrIh7d/3su2LzmQ==
+"@oxc-parser/binding-android-arm64@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-android-arm64/-/binding-android-arm64-0.140.0.tgz#d25051e94aa928163f36ad06616575d04a11f24b"
+  integrity sha512-Ia8jSvikUX6Sf+Ht+KOCUF/k1HpR0VlmqIYymubmWDebOEGtsyliHDR6JxsZ4IX3/c/GbrB1uh09aVGQv/LQmQ==
 
 "@oxc-parser/binding-darwin-arm64@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-darwin-arm64/-/binding-darwin-arm64-0.132.0.tgz#033a8f2789c3d09509ddd1a219dcbf2fd516125f"
   integrity sha512-Lc0f/TYoKBghE5/2Gsv7bLXk+TJZunx2Tf61X8hG4ARXdc8UYI26dCGccFSd1AyFbK3jfaNXtMnupggDbjPXdQ==
 
-"@oxc-parser/binding-darwin-arm64@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-darwin-arm64/-/binding-darwin-arm64-0.139.0.tgz#e4df65934f511fedf84f51525c195702ac86fd7e"
-  integrity sha512-vuQOv2WF5pZCkdSPEExul98o853M3MCR24DpWsGrUoPJu5KcnGE34kLXY2yFwBwZwT+eN1x40Tt4q6ZzlEdNUA==
+"@oxc-parser/binding-darwin-arm64@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-darwin-arm64/-/binding-darwin-arm64-0.140.0.tgz#b859c87a7f4a865b00197ab56d5c257d33ca89e7"
+  integrity sha512-G6VK0nK61pH0d0mBjUqSZbVxGqqO5uzeginLDQj+gOO6ObfJjXRwgkD/ol0w1INcnFeAb6YGGO7qc3ueGHaycQ==
 
 "@oxc-parser/binding-darwin-x64@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-darwin-x64/-/binding-darwin-x64-0.132.0.tgz#56601549bad307fcee2b3e0756769e36598841f4"
   integrity sha512-RG2eJIpf7C21z9HSSXFw1bTArdpKe7Y4fwcJTwRq1yCSe1vSavaN9GA1sm9KqzemTLAGVktQ+7qBTGp0vQeUZg==
 
-"@oxc-parser/binding-darwin-x64@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-darwin-x64/-/binding-darwin-x64-0.139.0.tgz#0009437421ecb08e50ec27a5e211461ecaf5c044"
-  integrity sha512-zxZB8ChS+7XactZhcyxQ292P/DNiiBaPPKYiVUlb3RC0V/hme5bokNubjcmEmbW9uTfmqLTpveAdkbe66H3pGg==
+"@oxc-parser/binding-darwin-x64@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-darwin-x64/-/binding-darwin-x64-0.140.0.tgz#81bc59ef5cdeebd34902626b9887aed12b6e32d0"
+  integrity sha512-HazBOuZzd2pO1C2uMmp8Gv7mhzMHqKSKDS1OZfcLEvpIcgA+48J92HEtNanVHDIzRD9PRPCV6aS6fkZIWOVl8Q==
 
 "@oxc-parser/binding-freebsd-x64@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-freebsd-x64/-/binding-freebsd-x64-0.132.0.tgz#68140dd5670556fca3aa094f0cb7e706854b5967"
   integrity sha512-wQIPntPLtJ8NcBpvKPbEv3NqzV6k8eP8tP/jE9Rg8HTg/j7urZGFSsTCPCW5k77Qfw2DM4vRvc9p3I4yq/Shvw==
 
-"@oxc-parser/binding-freebsd-x64@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-freebsd-x64/-/binding-freebsd-x64-0.139.0.tgz#d27c265b2e38c7ba825ea61d66a24e5fd8a4f0ca"
-  integrity sha512-iw2MsoCPBQwdJqywRAGsF1jEAcGoZ+DeG2LVzt5pdUvRHqajsMF46BH0rHiWoWtMwcMSia+oQYga7fHo7u7Bcw==
+"@oxc-parser/binding-freebsd-x64@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-freebsd-x64/-/binding-freebsd-x64-0.140.0.tgz#dd34a7927a9394a08ac374e04fc48dd5bc212036"
+  integrity sha512-9hSUU+HmTUyOe4JzMHxNGgLWNY7rrO+6ShicZwImNJacEAACDMIkuEQQkvXSL+WJN50jaNtLYJv8s4OcBdpyUQ==
 
 "@oxc-parser/binding-linux-arm-gnueabihf@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.132.0.tgz#84ef8af25ffb6172b02b1747bbbef668e09235c1"
   integrity sha512-PixKEpeSe3yxQWqNyOCBALRYc72+Tj7ILDofUl3iXo25cVOzLA6jHUhmOINRtWIPh7dbUie3QNeabwaQpZTw6w==
 
-"@oxc-parser/binding-linux-arm-gnueabihf@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.139.0.tgz#73d6763bcbd91f4500b368bfbc757aa51d829837"
-  integrity sha512-SwjD/k3Y5bwGJWOH313VyaDrAuaYg1Pe+4AAXCgUKvSO5IHkj+mZ0oFcOWmB5nTuOM3uwdT+leL8h4OnFlI5hw==
+"@oxc-parser/binding-linux-arm-gnueabihf@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.140.0.tgz#4142cb0ce5ec8157208c112b9fd11718233d8bd2"
+  integrity sha512-RAEuQsYtS0KcDFqN0ABTjyyNlokS91JeuDuoW9tEbG0JTbRNXnpQUdbYc/16JoA6Z/2ALbNrE3KmxtqDiuIjCQ==
 
 "@oxc-parser/binding-linux-arm-musleabihf@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.132.0.tgz#ca6a2dffed23143c9bcbefd8250832c71fdfb4d7"
   integrity sha512-sCR+DzGHlyHKnbA2z9zWjTUhIo8Sy0enJl4RDsBwPmkxYynPatpwOAWe8W5127SlW0boqUWHGtr1NWn5UwIhXQ==
 
-"@oxc-parser/binding-linux-arm-musleabihf@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.139.0.tgz#9fdd1a756290e1328159528fb024577925d3d636"
-  integrity sha512-qbeygDkcvailKFhphb2YGMMXsaZIynHlPtoOrcx4NZB/tRbUKraCCMbw8dPeFtEKasfS2qWh1VnReY+Lcys1zA==
+"@oxc-parser/binding-linux-arm-musleabihf@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.140.0.tgz#90e0f998907f32ffbf0136fc29b5d1da1e6fb54a"
+  integrity sha512-c4CkHvPvqfojouredJ0w3e6+jiBq0SbFyhH61kr/zPb/7XsaYTNKQ54vmlSsopfdQbNDX40ZeK9Abs2Qet6wcw==
 
 "@oxc-parser/binding-linux-arm64-gnu@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.132.0.tgz#ed1a4718c61d05836015c8eac7395ffe74c3f94a"
   integrity sha512-sQBix5P2cW+IpzTcCwYxnh9yALrKSIkKJThspBvMGcygSMnbzkSvhN7SfuX1hvBk8y1XEChsdkU3ET0V5DmzUw==
 
-"@oxc-parser/binding-linux-arm64-gnu@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.139.0.tgz#11958355cd7fd5cf07913ee87a740cfc175da567"
-  integrity sha512-SrlL02KeImKlvx/9rCeopOLH7qKI3rqKKEguK6KBwVwEGLhV/A47dW4DNigf6/LFhrwoovaiayEQryjYAI86dQ==
+"@oxc-parser/binding-linux-arm64-gnu@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.140.0.tgz#97ec2cb371693c1e9fc5eb660c48666ace786d82"
+  integrity sha512-yrjmLj8ixPB25yqvPGr28meGjb+keed7m1GqqY/0uqkhZIoT4t9zmfwUgFEtC33C7dtE+UQ7TU0IaVxf97SWJg==
 
 "@oxc-parser/binding-linux-arm64-musl@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.132.0.tgz#ae32a94bb666604728fa48c568ced5bb270d1819"
   integrity sha512-WozHg3Kc//8Sk756HXXgMbEAvqtG+Lzb9JOojwQzIGDtN78Az2dLttkb71akWYUF/8IgYfDSlfKh4Uot8is5Vw==
 
-"@oxc-parser/binding-linux-arm64-musl@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.139.0.tgz#23b5a9a0ff098ed2223922213c363c26711512b8"
-  integrity sha512-u9e884ChAVRmIZ1jr/m46S96FoDQnruFjISLi4Y0i6Wu/JUUmIiw7+umLyXILJsPfUuqnN5BJLe23t07+Y6+IA==
+"@oxc-parser/binding-linux-arm64-musl@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.140.0.tgz#ebad7ee8c4094e51f4d138365b87a51160671bfd"
+  integrity sha512-ggGMQTN8Agwxp2WiLMpdY671dt0qTDJWiWlJeig3HnUwTnerRl0J2JdGVghWBeDcss2D9S2V2Js6dZHEiVabVA==
 
 "@oxc-parser/binding-linux-ppc64-gnu@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-0.132.0.tgz#0de7511156b2b5d7d4fc3574ab3badd93a07c1ae"
   integrity sha512-CmX/ulNBOEwWTyVRmcpYKAcAizW6+OjtLJgo7fXoL9OqQvjF4VER8tPomv44vwzfSCy1BHbsB0ZlZYzYJNj4cA==
 
-"@oxc-parser/binding-linux-ppc64-gnu@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-0.139.0.tgz#6f36ad4e1481bb94c4cefe525df573e3c2535f9a"
-  integrity sha512-Z9tU2b3GJfAXOdirQmz4gZQkQkVjy53i77gf91l0733MQKa/qtk73KQQE2GzDtMqim+HyjpzvemmqzBtH2IJUA==
+"@oxc-parser/binding-linux-ppc64-gnu@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-0.140.0.tgz#fde39c4a1460fab7144d15025fb8c40e6e976668"
+  integrity sha512-IgTs8xYAFgAUGNmR65tIqjlJ8vKgrfXzC515e9goSdfMyKQV4aJpd2pUUudU4u51G64H0/DSEJEXKOraxm9ZCA==
 
 "@oxc-parser/binding-linux-riscv64-gnu@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.132.0.tgz#9a4a3b3261b6ada598b65adc4521581c45aa1003"
   integrity sha512-j9oQS+hM90SdhviNGWbPgT4+Rlq+ac++q/zjgwPD1mVHgxHzATvoRGtDx0sXGmFOQ9J9YkwAhYGb5MAHL6TAsA==
 
-"@oxc-parser/binding-linux-riscv64-gnu@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.139.0.tgz#aeccde42e802722ead2c950ac9bdb40e9e88a71b"
-  integrity sha512-RyUbr7hzPK84YDWKs77PRYk9VBwWbsbuYsQzQWiSmLnARXTg2zntLPGfCH/1wpfUYdmGkp/6SsqTXSsYdw9Jgw==
+"@oxc-parser/binding-linux-riscv64-gnu@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.140.0.tgz#6990a42ddac6b81b0a00076e35028b514fbaf6ed"
+  integrity sha512-A1x+PMWZmSGaFVOx2YeNTFau8uD+QO14/vLP4GrcuvUPs3+nBkUOjy9Lus86ftHsDojjYMbvBelmKc3F7Rv08g==
 
 "@oxc-parser/binding-linux-riscv64-musl@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-0.132.0.tgz#e55c1d671e41617f27535216483ccc01f1ff4a5e"
   integrity sha512-bLz+Xi+Agnfmd7kWPEsSVwCn2k4EyIalZkNBcQ0OGIv9rqn8VgCPLNd03tM9mKX/5TdlvDXalz0q71BIrOPNqg==
 
-"@oxc-parser/binding-linux-riscv64-musl@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-0.139.0.tgz#be18921e8d08059dc599ed16fa64d1e4b68f50c6"
-  integrity sha512-dcQhjtcDvtR8BgkUpt03Yz5SzxdzYvTigenIJOEsiSX6G2t6yybEMxGWjp0dOuYGror0BaqcZfTyXR58amCEig==
+"@oxc-parser/binding-linux-riscv64-musl@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-0.140.0.tgz#fe9e6a5f6514ba8bb8c32bbbdb5d11165af64542"
+  integrity sha512-zBqpfRo2myWPrPo5xUjeZqlnPXPXsX8BcWtWff66/eGRQdbPjhzPgXa/F+AtxT2afUViPxbuDlwscMKzQ5tg+g==
 
 "@oxc-parser/binding-linux-s390x-gnu@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.132.0.tgz#2e4b692103d8ee745990c7ed5fd023387e6c93d9"
   integrity sha512-U6t2qbJU0ypTfyj9QV3W1Y6mITDTL8ai/OR6NUn85vyHthOvobKWgXzU4tu0EskSzlpuVFz1g0jFGulDIUKHxQ==
 
-"@oxc-parser/binding-linux-s390x-gnu@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.139.0.tgz#838ab1b72e3a5df7232248f45a63027e503cd13c"
-  integrity sha512-iuGrxysV4rGUymdKpn7bgZQ6Vix8Bi/6D/rp71HYIzphq6NKrsBhsGOYsSZte+uBFL43tXh7Xr7TM72sGliJNA==
+"@oxc-parser/binding-linux-s390x-gnu@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.140.0.tgz#9ec751995735f9452625fc18a1fdf6f430ea2eed"
+  integrity sha512-2M1DPm/8w9I//YzFlFC9qXw+r2tJFh5CYwRlYTq2vUJQS7qoQftEDeCZ8EnN7KHtvSiXvYj8mZI5pR7DpXmcEw==
 
 "@oxc-parser/binding-linux-x64-gnu@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.132.0.tgz#2ba1d08aeaed17247dac4cb5b9a3bc83b7bd7501"
   integrity sha512-WcEaSNHFk8yz5YFlQQAlhq6jOFmZBB/RKE7uzhyCIf+pF1Lmv9gUH4221mle2Gd9iHyWT3ySNph8yZgb1xYdWg==
 
-"@oxc-parser/binding-linux-x64-gnu@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.139.0.tgz#c280b764001dfef5c5df81b0e043216a7fa700d8"
-  integrity sha512-NxJdZZyaa2JLLvNfH/iJQXfCNfKcPMylwY4ObMpBVmW4Nq+RyUpVVQXrMMelcQ6rwx3nuhF1Iga8n+eoAKGCIA==
+"@oxc-parser/binding-linux-x64-gnu@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.140.0.tgz#246c6fd05e75a9c81a9cb2c0e7f66c6e148c640f"
+  integrity sha512-8aRDbZ/U/jO8N7go1MO72jtbpb4uswV8d7vOkMvt/BPgZiyEYvl1VIWK4ESxZZhnJ4tqwVldgX7dNiP/eB1Jdg==
 
 "@oxc-parser/binding-linux-x64-musl@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-linux-x64-musl/-/binding-linux-x64-musl-0.132.0.tgz#677889452adb283e791798faf70af0627bd493ad"
   integrity sha512-iQrV4iJzQgRwK3BWRmQl1C3C6g3wYpXN2WLdQdyR+efoUnncdShZAVp9OgcojtlD3MDRbuOMGG3SjxF4fL4nlQ==
 
-"@oxc-parser/binding-linux-x64-musl@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-x64-musl/-/binding-linux-x64-musl-0.139.0.tgz#03fee15f130577630e3cac3c0da45309815ad49e"
-  integrity sha512-ePxBvvtzISmSsJ0RIj8FNikSCn58i1jtccj7XR4U9Li4iSzhkFyYlnJ51cQTUwkairz8WMTD4SpKoot8RyTnQA==
+"@oxc-parser/binding-linux-x64-musl@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-x64-musl/-/binding-linux-x64-musl-0.140.0.tgz#6a7861884ebf5236c163b323eda5e8223e6dddb3"
+  integrity sha512-xRqpeI8U2sQQS1W5BMWRyMTxtagkuLG2dEWruet5lFsWHTvBth11/TpSaJatHdqVVwHN0q3uuoS9zRsGinq8hg==
 
 "@oxc-parser/binding-openharmony-arm64@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-openharmony-arm64/-/binding-openharmony-arm64-0.132.0.tgz#2928bbd0f815a7bf11a86b1bccfb0f352b92a7b3"
   integrity sha512-FWzmUGrZ6GUby4U7WIwcCtab6tdmlTO3xTRRKyb5kjIJVEiaUAT8animUG/nK8ZCA8gkRkPOTId4rl6uTqUmJQ==
 
-"@oxc-parser/binding-openharmony-arm64@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-openharmony-arm64/-/binding-openharmony-arm64-0.139.0.tgz#cb0d1d05df9bd632ca4125302c1c9a68f00e4363"
-  integrity sha512-b/c2+mPXMOxG5x16n8yf9cjor/ntQQScmYnSmLEWIWJ4rfXd5dokMxx0kliSLA+YAGq6DD3K9BWi+aFXHiiV1w==
+"@oxc-parser/binding-openharmony-arm64@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-openharmony-arm64/-/binding-openharmony-arm64-0.140.0.tgz#837520388be3cbcb4a5486f9e85598e0bcd1af22"
+  integrity sha512-GbGRe26MqAKciFRvXeHNQJ6VAHYs9R4miP89sEAncysM3n+f4lnyLWgsa9kklJNpfnxdq2yRoNYHFqwBckVimw==
 
 "@oxc-parser/binding-wasm32-wasi@0.132.0":
   version "0.132.0"
@@ -890,13 +905,13 @@
     "@emnapi/runtime" "1.10.0"
     "@napi-rs/wasm-runtime" "^1.1.4"
 
-"@oxc-parser/binding-wasm32-wasi@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-wasm32-wasi/-/binding-wasm32-wasi-0.139.0.tgz#d9f9758671cfaf0fe3069be66a1ade6ee7f7acf9"
-  integrity sha512-rNU0pO+/CVPC2qZ+xtX5R2cOje9Q75q3UkfgwUCPlplqxMv6Iffd5tMPGVMCLGnPINxPlmi0WPsW94HltbYvfQ==
+"@oxc-parser/binding-wasm32-wasi@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-wasm32-wasi/-/binding-wasm32-wasi-0.140.0.tgz#49bd9ac61016154753f3adebf59b72aa3e754c72"
+  integrity sha512-vFiC1hqys+hkX1GnQkIoiTQJNiUm43Z0lO35ETKXTw0YtpW7+cN58YRRXFAQQ+TgpkIi3lrhcxdlnqz+Oi3ptQ==
   dependencies:
-    "@emnapi/core" "1.11.1"
-    "@emnapi/runtime" "1.11.1"
+    "@emnapi/core" "1.11.2"
+    "@emnapi/runtime" "1.11.2"
     "@napi-rs/wasm-runtime" "^1.1.6"
 
 "@oxc-parser/binding-win32-arm64-msvc@0.132.0":
@@ -904,32 +919,32 @@
   resolved "https://npm.flatt.tech/@oxc-parser/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.132.0.tgz#b1a0913ad2545c30f498ba181c05de3898240976"
   integrity sha512-RH/NbFjGKqdUAUi7Oh3LQPxUk2hsWFEEQ38HSnbRQT8QjBZFKqL1fMbmsB3N4jy/KPh9iX94+9dmkEMBBbambw==
 
-"@oxc-parser/binding-win32-arm64-msvc@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.139.0.tgz#45147a5bb39ad8f74522d9fee435690793614588"
-  integrity sha512-JPEmfncZfqAFiGsAN6UZSMIBqnG8wn8buywRacFOWjP+9dZwcs03SsBp4tmyjM/4l/VoH/IuThrW1Jof3OyQUw==
+"@oxc-parser/binding-win32-arm64-msvc@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.140.0.tgz#190b972b637c5a601644fff86561c59e658a4eed"
+  integrity sha512-fGSQldwEYKhM+H8uLt76Op8hh5+FYaR6lvvQ1Txw3Mhn86DyQXLcI0fi1EkFlTK7F+46OCk/j0AJMzZQm6g5Xg==
 
 "@oxc-parser/binding-win32-ia32-msvc@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-0.132.0.tgz#13964f4b59671f7235f4f85866ab3db6e4afd6c5"
   integrity sha512-JUr4jQY9jxoIB/YTLXr6XofSi5xikj6p5/Ns1h0VOBDT0j1jKU+kMsv2xxv51RwnETcXpA1Yw/9oUAfcqfaqEA==
 
-"@oxc-parser/binding-win32-ia32-msvc@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-0.139.0.tgz#ebe80c17c4295c35bbfa6a08dab88806e62f43b2"
-  integrity sha512-c06dWBwEnFHof5JN7T9/ts23uATXS9czPEBO60d4xnjH2Am29Bo7OGKdVHRmcWQnw0OBxlTg9fIEXAvtcwOBfw==
+"@oxc-parser/binding-win32-ia32-msvc@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-0.140.0.tgz#5d2438f810e646ab7e65b69b223ee00656cd6054"
+  integrity sha512-sDS2Bai+g3ZWYwfZqmosiSuFDBcVnZ3Ta6pszzsiJoLMqsJEWKcxXXbGa7b7yXr++W2lQNPb3ZRJ8czseqL7RA==
 
 "@oxc-parser/binding-win32-x64-msvc@0.132.0":
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-parser/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.132.0.tgz#468339fb08809ddb856f3bc51db718790fb51f05"
   integrity sha512-2dapgHpA5X8DSXF4AU36hJWYf6zP0tKjMXFRAZFBD62pkevW/uhFDXoFH9Y/3Fd2EtDrw5ByNnR1wVE9X9y0SQ==
 
-"@oxc-parser/binding-win32-x64-msvc@0.139.0":
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.139.0.tgz#2fbb385bb3d33ac2bea30d961bda58c9b6928e6f"
-  integrity sha512-bI3/44urQjW/D495JPXe+c9d+4Q+ONi3DvDNnzwRZYTWHZ3hAlFdmirYK4mzhTfCZiAly02EbMYir7QGU+9O2Q==
+"@oxc-parser/binding-win32-x64-msvc@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.140.0.tgz#fedda07f4cebf668073f8eb37b80031c5250c668"
+  integrity sha512-kHbE1zWyb5OQgJA6/5P4WjiuB01sYdQwtZnSSyE58FQEXDAMnyeeq4vj7KgN75i5SlBzOs8A5MrtlD3gOlDKqQ==
 
-"@oxc-project/types@=0.139.0", "@oxc-project/types@^0.139.0":
+"@oxc-project/types@=0.139.0":
   version "0.139.0"
   resolved "https://registry.yarnpkg.com/@oxc-project/types/-/types-0.139.0.tgz#38d76b9dbf934c2a02be174fb32ceebf182fe742"
   integrity sha512-r9gHphtCs+1M7J0pw6Sn/hh/Wpa/iQrOOkrNAlVLF/gHq+/CJmHIWKKUUhdWjcD6CIa8idarspCsASiXCXvFUw==
@@ -938,6 +953,11 @@
   version "0.132.0"
   resolved "https://npm.flatt.tech/@oxc-project/types/-/types-0.132.0.tgz#d77243df4fe1a0a1e60e12ac6240fa898d2363ff"
   integrity sha512-FESMOxil5Se014ui/Eq8fT5uHJo6nIRwH0PfJrZJXs6Gek3ZVFOrpUv3YIZT20m+extU98Hg1Ym72U58rlsxUQ==
+
+"@oxc-project/types@^0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@oxc-project/types/-/types-0.140.0.tgz#2acc1bd45ff24951059d01ce7552d26e1574c5ac"
+  integrity sha512-h5LUOzGArYemnW1NMz/DuuQhBi96J6JL2Bk8zE4kvqxB5Sg3jxmCiH4uyOWHDkiKSt5vWlG4FIwCR/DbstcNRQ==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -1465,26 +1485,26 @@
     "@typescript-eslint/types" "8.65.0"
     eslint-visitor-keys "^5.0.0"
 
-"@unhead/bundler@3.1.8":
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/@unhead/bundler/-/bundler-3.1.8.tgz#b2462e02e4d3d05758fc7d2df47e388541d1a0e9"
-  integrity sha512-mVhM6gmvAgaE9UgENuFSvqpCghAorY8PbQgV+n3y6VyOLso/KbCOd4hm4cmI/Q/IETQZTDSZBIjVVS98mgYwdA==
+"@unhead/bundler@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@unhead/bundler/-/bundler-3.2.1.tgz#76bf13169a5e44f22ec6c95a0fa2d38e94d5a7ce"
+  integrity sha512-lMJGiviHfmZT1dtL+VAi4AgP0NrT1dZXDVK96lajUF4tIYxha1FEo0yQun0lp1J+RL8BE2pm3u2LZY9564dA1A==
   dependencies:
     "@vitejs/devtools-kit" "^0.3.4"
-    magic-string "^0.30.21"
-    oxc-parser "^0.139.0"
+    magic-string "^1.0.0"
+    oxc-parser "^0.140.0"
     oxc-walker "^1.0.0"
     ufo "^1.6.4"
     unplugin "^3.3.0"
 
-"@unhead/vue@^3.1.8":
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-3.1.8.tgz#70aa07ec46b19579ff3d640c7fcab5310ccbf907"
-  integrity sha512-mmcvZ2gchM+sG+M8HjOl+MAHRhyqTEBCrvsR3ymjTEPQDhHGQJqKwW1i5UJzYa2xNubj7AmSMOQF2OvMGIuuQQ==
+"@unhead/vue@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-3.2.1.tgz#82400e3ea147473eb58739a2f874e21393b19250"
+  integrity sha512-HILBUv/3QDIze3SosuL0/fkXhBsw+XfDM8Et62O1R4sAAVcjxnggc8JSYn6LrgEKht1GABnz94usRtBe3SofgA==
   dependencies:
-    "@unhead/bundler" "3.1.8"
+    "@unhead/bundler" "3.2.1"
     hookable "^6.1.1"
-    unhead "3.1.8"
+    unhead "3.2.1"
     unplugin "^3.3.0"
 
 "@valibot/to-json-schema@^1.7.0":
@@ -1592,32 +1612,12 @@
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.6.4.tgz#cbe97fe0162b365edc1dba80e173f90492535343"
   integrity sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==
 
-"@vue/devtools-api@^7.7.7":
-  version "7.7.9"
-  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-7.7.9.tgz#999dbea50da6b00cf59a1336f11fdc2b43d9e063"
-  integrity sha512-kIE8wvwlcZ6TJTbNeU2HQNtaxLx3a84aotTITUuL/4bzfPxzajGBOoqjMhwZJ8L9qFYDU/lAYMEEm11dnZOD6g==
-  dependencies:
-    "@vue/devtools-kit" "^7.7.9"
-
 "@vue/devtools-api@^8.1.5":
   version "8.1.5"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-8.1.5.tgz#0d8a7614f5d4549da31fb5b66988efdebbfa8ed5"
   integrity sha512-YJipMVAKe5wT5CWf5kTYCaNV7NMNjFVxJkIkJaJ4W/nCxEBzlZzrOsYKeCymdCrFZmBS/+wTWFoUs3Jf/Q6XSQ==
   dependencies:
     "@vue/devtools-kit" "^8.1.5"
-
-"@vue/devtools-kit@^7.7.9":
-  version "7.7.9"
-  resolved "https://registry.yarnpkg.com/@vue/devtools-kit/-/devtools-kit-7.7.9.tgz#bc218a815616e8987df7ab3e10fc1fb3b8706c58"
-  integrity sha512-PyQ6odHSgiDVd4hnTP+aDk2X4gl2HmLDfiyEnn3/oV+ckFDuswRs4IbBT7vacMuGdwY/XemxBoh302ctbsptuA==
-  dependencies:
-    "@vue/devtools-shared" "^7.7.9"
-    birpc "^2.3.0"
-    hookable "^5.5.3"
-    mitt "^3.0.1"
-    perfect-debounce "^1.0.0"
-    speakingurl "^14.0.1"
-    superjson "^2.2.2"
 
 "@vue/devtools-kit@^8.1.5":
   version "8.1.5"
@@ -1628,13 +1628,6 @@
     birpc "^2.6.1"
     hookable "^5.5.3"
     perfect-debounce "^2.0.0"
-
-"@vue/devtools-shared@^7.7.9":
-  version "7.7.9"
-  resolved "https://registry.yarnpkg.com/@vue/devtools-shared/-/devtools-shared-7.7.9.tgz#fa4c096b744927081a7dda5fcf05f34b1ae6ca14"
-  integrity sha512-iWAb0v2WYf0QWmxCGy0seZNDPdO3Sp5+u78ORnyeonS6MT4PC7VPrryX2BpMJrwlDeaZ6BD4vP4XKjK0SZqaeA==
-  dependencies:
-    rfdc "^1.4.1"
 
 "@vue/devtools-shared@^8.1.5":
   version "8.1.5"
@@ -1767,7 +1760,7 @@ balanced-match@^4.0.2:
   resolved "https://npm.flatt.tech/balanced-match/-/balanced-match-4.0.4.tgz#bfb10662feed8196a2c62e7c68e17720c274179a"
   integrity sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==
 
-birpc@^2.3.0, birpc@^2.6.1:
+birpc@^2.6.1:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/birpc/-/birpc-2.9.0.tgz#b59550897e4cd96a223e2a6c1475b572236ed145"
   integrity sha512-KrayHS5pBi69Xi9JmvoqrIgYGDkD6mcSe/i6YKi3w5kekCLzrX4+nawcXqrj2tIp50Kw/mT/s3p+GVK0A0sKxw==
@@ -1848,13 +1841,6 @@ confbox@^0.2.2:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/confbox/-/confbox-0.2.4.tgz#592e7be71f882a4a874e3c88f0ac1ef6f7da1ce5"
   integrity sha512-ysOGlgTFbN2/Y6Cg3Iye8YKulHw+R2fNXHrgSmXISQdMnomY6eNDprVdW9R5xBguEqI954+S6709UyiO7B+6OQ==
-
-copy-anything@^4:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/copy-anything/-/copy-anything-4.0.5.tgz#16cabafd1ea4bb327a540b750f2b4df522825aea"
-  integrity sha512-7Vv6asjS4gMOuILabD3l739tsaxFQmC+a7pLZm02zyvs8p977bL3zEgq3yDk5rn9B0PbYgIv++jmHcuUab4RhA==
-  dependencies:
-    is-what "^5.2.0"
 
 core-js@^3.49.0:
   version "3.49.0"
@@ -2293,11 +2279,6 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
-is-what@^5.2.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/is-what/-/is-what-5.5.0.tgz#a3031815757cfe1f03fed990bf6355a2d3f628c4"
-  integrity sha512-oG7cgbmg5kLYae2N5IVd3jm2s+vldjxJzK1pcu9LfpGuQ93MQSzo0okvRna+7y5ifrD+20FE8FvjusyGaz14fw==
-
 isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
@@ -2496,6 +2477,13 @@ magic-string@^0.30.19, magic-string@^0.30.21:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.5"
 
+magic-string@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-1.0.0.tgz#e0f1c16d20b1a993d6481007f49fe1f5ca9b38ff"
+  integrity sha512-CGvjzMN08iv6w1mm4/x3Gh1hLb4VnyRUA15FFpl6CsCIGGoe36k7kY5KNz9QDbSBN5I/fWHM6ZlIkUTa5xdUEA==
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.5.5"
+
 merge2@^1.3.0:
   version "1.4.1"
   resolved "https://npm.flatt.tech/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
@@ -2515,11 +2503,6 @@ minimatch@^10.2.2, minimatch@^10.2.4, minimatch@^10.2.5:
   integrity sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==
   dependencies:
     brace-expansion "^5.0.5"
-
-mitt@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/mitt/-/mitt-3.0.1.tgz#ea36cf0cc30403601ae074c8f77b7092cdab36d1"
-  integrity sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==
 
 mlly@^1.7.4, mlly@^1.8.2:
   version "1.8.2"
@@ -2625,33 +2608,33 @@ oxc-parser@^0.132.0:
     "@oxc-parser/binding-win32-ia32-msvc" "0.132.0"
     "@oxc-parser/binding-win32-x64-msvc" "0.132.0"
 
-oxc-parser@^0.139.0:
-  version "0.139.0"
-  resolved "https://registry.yarnpkg.com/oxc-parser/-/oxc-parser-0.139.0.tgz#80a935fc8cf0f7005d1bc3812e8d8d7cb8f14091"
-  integrity sha512-cf1TKZN+zc0lwqigeyXKzKVk5+vNRe99Or2+wVJsXLdlhJgC+gsIniYDfj/ZEBzCJ8Xm21ZG6YtMbR262CcS2w==
+oxc-parser@^0.140.0:
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/oxc-parser/-/oxc-parser-0.140.0.tgz#71a7219cd9e18caa06782a276336b5835d38fc3a"
+  integrity sha512-h6QFWd6lBMfjESqgQ27GjzrSDb0qbznp7VDQqp2zvgsrWut4vcchyMIzOVXvGQ2GMZgKw9RWrFNWv9WqGL0p7Q==
   dependencies:
-    "@oxc-project/types" "^0.139.0"
+    "@oxc-project/types" "^0.140.0"
   optionalDependencies:
-    "@oxc-parser/binding-android-arm-eabi" "0.139.0"
-    "@oxc-parser/binding-android-arm64" "0.139.0"
-    "@oxc-parser/binding-darwin-arm64" "0.139.0"
-    "@oxc-parser/binding-darwin-x64" "0.139.0"
-    "@oxc-parser/binding-freebsd-x64" "0.139.0"
-    "@oxc-parser/binding-linux-arm-gnueabihf" "0.139.0"
-    "@oxc-parser/binding-linux-arm-musleabihf" "0.139.0"
-    "@oxc-parser/binding-linux-arm64-gnu" "0.139.0"
-    "@oxc-parser/binding-linux-arm64-musl" "0.139.0"
-    "@oxc-parser/binding-linux-ppc64-gnu" "0.139.0"
-    "@oxc-parser/binding-linux-riscv64-gnu" "0.139.0"
-    "@oxc-parser/binding-linux-riscv64-musl" "0.139.0"
-    "@oxc-parser/binding-linux-s390x-gnu" "0.139.0"
-    "@oxc-parser/binding-linux-x64-gnu" "0.139.0"
-    "@oxc-parser/binding-linux-x64-musl" "0.139.0"
-    "@oxc-parser/binding-openharmony-arm64" "0.139.0"
-    "@oxc-parser/binding-wasm32-wasi" "0.139.0"
-    "@oxc-parser/binding-win32-arm64-msvc" "0.139.0"
-    "@oxc-parser/binding-win32-ia32-msvc" "0.139.0"
-    "@oxc-parser/binding-win32-x64-msvc" "0.139.0"
+    "@oxc-parser/binding-android-arm-eabi" "0.140.0"
+    "@oxc-parser/binding-android-arm64" "0.140.0"
+    "@oxc-parser/binding-darwin-arm64" "0.140.0"
+    "@oxc-parser/binding-darwin-x64" "0.140.0"
+    "@oxc-parser/binding-freebsd-x64" "0.140.0"
+    "@oxc-parser/binding-linux-arm-gnueabihf" "0.140.0"
+    "@oxc-parser/binding-linux-arm-musleabihf" "0.140.0"
+    "@oxc-parser/binding-linux-arm64-gnu" "0.140.0"
+    "@oxc-parser/binding-linux-arm64-musl" "0.140.0"
+    "@oxc-parser/binding-linux-ppc64-gnu" "0.140.0"
+    "@oxc-parser/binding-linux-riscv64-gnu" "0.140.0"
+    "@oxc-parser/binding-linux-riscv64-musl" "0.140.0"
+    "@oxc-parser/binding-linux-s390x-gnu" "0.140.0"
+    "@oxc-parser/binding-linux-x64-gnu" "0.140.0"
+    "@oxc-parser/binding-linux-x64-musl" "0.140.0"
+    "@oxc-parser/binding-openharmony-arm64" "0.140.0"
+    "@oxc-parser/binding-wasm32-wasi" "0.140.0"
+    "@oxc-parser/binding-win32-arm64-msvc" "0.140.0"
+    "@oxc-parser/binding-win32-ia32-msvc" "0.140.0"
+    "@oxc-parser/binding-win32-x64-msvc" "0.140.0"
 
 oxc-walker@^1.0.0:
   version "1.0.0"
@@ -2699,11 +2682,6 @@ pathe@^2.0.1, pathe@^2.0.3:
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-2.0.3.tgz#3ecbec55421685b70a9da872b2cff3e1cbed1716"
   integrity sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==
 
-perfect-debounce@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/perfect-debounce/-/perfect-debounce-1.0.0.tgz#9c2e8bc30b169cc984a58b7d5b28049839591d2a"
-  integrity sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==
-
 perfect-debounce@^2.0.0, perfect-debounce@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/perfect-debounce/-/perfect-debounce-2.1.0.tgz#e7078e38f231cb191855c3136a4423aef725d261"
@@ -2724,12 +2702,12 @@ picomatch@^4.0.3, picomatch@^4.0.4, picomatch@^4.0.5:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-4.0.5.tgz#51ea57a17d86f605f81039595fbc40ed06a55fab"
   integrity sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==
 
-pinia@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-3.0.4.tgz#75dde12784a61e34c1fa6abcd13c1a1061c360c0"
-  integrity sha512-l7pqLUFTI/+ESXn6k3nu30ZIzW5E2WZF/LaHJEpoq6ElcLD+wduZoB2kBN19du6K/4FDpPMazY2wJr+IndBtQw==
+pinia@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-4.0.2.tgz#ed71ec5818e6f26cbe8d2f552df8777d3413b615"
+  integrity sha512-yKVVA7bSj5oRZFp/Ab9wLlmyb5gPUYEiIm4ryiWTe/xe7PtkRdMVOp1X1ggvq0c6Uj7Q0Du1HnV2mtAwM0Ks1g==
   dependencies:
-    "@vue/devtools-api" "^7.7.7"
+    nostics "^1.1.4"
 
 pkg-types@^1.3.1:
   version "1.3.1"
@@ -2867,11 +2845,6 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.1.0.tgz#0fe13b9522e1473f51b558ee796e08f11f9b489f"
   integrity sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==
 
-rfdc@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/rfdc/-/rfdc-1.4.1.tgz#778f76c4fb731d93414e8f925fbecf64cce7f6ca"
-  integrity sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==
-
 rolldown@~1.1.4:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/rolldown/-/rolldown-1.1.5.tgz#339aae250844351fc55b74e2652d3ebd6fba389d"
@@ -2954,11 +2927,6 @@ source-map-js@^1.0.2, source-map-js@^1.2.1:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
   integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
 
-speakingurl@^14.0.1:
-  version "14.0.1"
-  resolved "https://registry.yarnpkg.com/speakingurl/-/speakingurl-14.0.1.tgz#f37ec8ddc4ab98e9600c1c9ec324a8c48d772a53"
-  integrity sha512-1POYv7uv2gXoyGFpBCmpDVSNV74IfsWlDW216UPjbWufNf+bSU6GdbDsxdcxtfwb4xlI3yxzOTKClUosxARYrQ==
-
 srvx@^0.11.15:
   version "0.11.17"
   resolved "https://npm.flatt.tech/srvx/-/srvx-0.11.17.tgz#ac59840fb8ab64fc539ef6e622d84e0add22f6c9"
@@ -2986,13 +2954,6 @@ strip-ansi@^7.2.0:
   integrity sha512-yDPMNjp4WyfYBkHnjIRLfca1i6KMyGCtsVgoKe/z1+6vukgaENdgGBZt+ZmKPc4gavvEZ5OgHfHdrazhgNyG7w==
   dependencies:
     ansi-regex "^6.2.2"
-
-superjson@^2.2.2:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/superjson/-/superjson-2.2.6.tgz#a223a3a988172a5f9656e2063fe5f733af40d099"
-  integrity sha512-H+ue8Zo4vJmV2nRjpx86P35lzwDT3nItnIsocgumgr0hHMQ+ZGq5vrERg9kJBo5AWGmxZDhzDo+WVIJqkB0cGA==
-  dependencies:
-    copy-anything "^4"
 
 tailwindcss@4.3.3, tailwindcss@^4.3.3:
   version "4.3.3"
@@ -3076,10 +3037,10 @@ undici-types@~7.16.0:
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-7.16.0.tgz#ffccdff36aea4884cbfce9a750a0580224f58a46"
   integrity sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==
 
-unhead@3.1.8:
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/unhead/-/unhead-3.1.8.tgz#d9172bdd51f911eaed338ed60066e3d0fbc639f9"
-  integrity sha512-8YcZ88tTvVV+CxYsqKg9O2E0h/tR7PsUHQ22tc4xodVOoUcz/Pl5OHC3Ab3IKhLIy/8OcyAWoS4LCPN7kGvwSg==
+unhead@3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/unhead/-/unhead-3.2.1.tgz#2efe692492d97264db1633e070eb1be089105e6f"
+  integrity sha512-Z7VNRf0QJlRZmwA1p5gsnmKYkjnbvV/CXdJAL+VMDmMF+RS2P4FqLouEhBA6WOuKPe3ZZ8EZgX2zQm7ZkAGDPg==
   dependencies:
     hookable "^6.1.1"
     unplugin "^3.3.0"

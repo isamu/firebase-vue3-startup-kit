@@ -10,10 +10,10 @@
   },
   "type": "module",
   "dependencies": {
-    "@unhead/vue": "^3.1.8",
+    "@unhead/vue": "^3.2.1",
     "core-js": "^3.49.0",
     "firebase": "^12.16.0",
-    "pinia": "^3.0.4",
+    "pinia": "^4.0.2",
     "strip-ansi": "^7.2.0",
     "vue": "^3.5.40",
     "vue-i18n": "^11.4.7",
