@@ -31,7 +31,7 @@
     "eslint-plugin-sonarjs": "^4.2.0",
     "eslint-plugin-vue": "^10.10.0",
     "globals": "^17.7.0",
-    "postcss": "^8.5.20",
+    "postcss": "^8.5.23",
     "prettier": "^3.9.5",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4.3.3",
