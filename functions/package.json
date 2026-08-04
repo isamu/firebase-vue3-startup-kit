@@ -18,7 +18,7 @@
     "express": "^5.2.1",
     "firebase-admin": "^14.2.0",
     "firebase-functions": "^7.3.0",
-    "hono": "^4.12.31"
+    "hono": "^4.12.34"
   },
   "resolutions": {
     "uuid": "14.0.1"
