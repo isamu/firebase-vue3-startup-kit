@@ -18,22 +18,22 @@
     "express": "^5.2.1",
     "firebase-admin": "^14.2.0",
     "firebase-functions": "^7.4.0",
-    "hono": "^4.13.11"
+    "hono": "^4.13.16"
   },
   "resolutions": {
-    "uuid": "14.0.1"
+    "uuid": "14.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@typescript-eslint/eslint-plugin": "^8.70.1",
-    "@typescript-eslint/parser": "^8.70.1",
-    "eslint": "^10.11.0",
+    "@typescript-eslint/eslint-plugin": "^8.72.1",
+    "@typescript-eslint/parser": "^8.72.1",
+    "eslint": "^10.14.0",
     "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-sonarjs": "^4.2.1",
-    "globals": "^17.12.0",
-    "prettier": "^3.9.9",
+    "eslint-plugin-sonarjs": "^4.2.2",
+    "globals": "^17.14.0",
+    "prettier": "^3.9.10",
     "typescript": "6.0.3",
-    "typescript-eslint": "^8.70.1"
+    "typescript-eslint": "^8.72.1"
   },
   "private": true
 }
